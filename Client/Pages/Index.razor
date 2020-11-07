@@ -1,0 +1,34 @@
+﻿@using TechDM.Client.Shared.Cards
+@using TechDM.Shared
+@using TechDM.Shared.Enums
+@inject HttpClient Http
+@page "/"
+
+@if (QuestionList != null)
+{
+    @foreach (var q in QuestionList)
+    {
+        <DefaultCard Question="q" OnClick="@nextQuestion"></DefaultCard>
+    }
+}
+
+
+
+@code{
+    
+    public IEnumerable<Question> QuestionList { get; set; }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        QuestionList = await Http.GetFromJsonAsync<IEnumerable<Question>>("api/question");
+
+
+    }
+
+
+
+    public void nextQuestion()
+    {
+        Console.Out.Write("Next Buttom Clicked");
+    }
+}

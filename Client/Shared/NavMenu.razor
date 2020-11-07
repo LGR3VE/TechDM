@@ -1,0 +1,47 @@
+﻿<div class="sidebar @NavMenuCssClass"> 
+    <div class="container">
+        
+        <ul class="nav flex-column">
+            
+            <li class="nav-item">
+                <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                    <span class="fas fa-cubes" aria-hidden="true"></span> Model
+                </NavLink>
+            </li>
+
+            <li class="nav-item">
+                <NavLink class="nav-link" href="overview">
+                    <span class="fas fa-map" aria-hidden="true"></span> Overview
+                </NavLink>
+            </li>
+
+            <li class="nav-item">
+                <NavLink class="nav-link" href="help">
+                    <span class="fas fa-question-circle" aria-hidden="true"></span> Help
+                </NavLink>
+            </li>
+            
+            <li class="nav-item">
+                <NavLink class="nav-link" href="contact">
+                    <span class="fas fa-at" aria-hidden="true"></span> Contact
+                </NavLink>
+            </li>
+            
+            
+        </ul>
+        
+    </div>
+</div>
+
+@* @onclick="ToggleNavMenu" *@
+
+@code {
+    private bool collapseNavMenu = false;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

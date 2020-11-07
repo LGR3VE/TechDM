@@ -1,0 +1,56 @@
+@using TechDM.Shared
+@using TechDM.Shared.Enums
+
+<div class="card">
+    <div class="card-header">
+        @Question.QuestionText
+    </div>
+    <div class="card-body">
+        <form>
+            
+            @if (Question.QuestionType == QuestionType.text)
+            {
+                <div class="form-group">
+                    @foreach (var answer in Question.Answers)
+                    {
+                        <label for="@answer.Id">@Question.QuestionText</label>
+                        <input type="text" name="@Question.Id" class="form-control" id="@answer.Id"
+                               aria-describedby="@answer.AnswerDescription"
+                               placeholder="@answer.AnswerPlaceholder">
+                    }
+                </div>
+            }
+
+
+            @if (Question.QuestionType == QuestionType.checkbox || Question.QuestionType == QuestionType.radio)
+            {
+                <div class="form-check card-answer">
+                    @foreach (var answer in Question.Answers)
+                    {
+                        
+                       <input class="form-check-input" name="@Question.Id" type="@Question.QuestionType" value="@answer.Selected" id="@answer.Id">
+                        <label class="form-check-label" for="@answer.Id">
+                            @answer.AnswerText
+                        </label><br>
+
+                    }
+                </div>
+            }
+
+        </form>
+    </div>
+</div>
+
+<button class="btn btn-info card-nextbtn" @onclick="OnClick">next</button>
+
+
+@code {
+    
+    [Parameter]
+    public Question Question { get; set; }
+
+    [Parameter] 
+    public EventCallback OnClick { get; set; }
+    
+
+}
