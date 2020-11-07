@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechDM.Client", "Client\Tec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechDM.Shared", "Shared\TechDM.Shared.csproj", "{8760BF28-E932-4415-9B2D-8D9281E9E5F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meh", "Meh\Meh.csproj", "{84E2CC2A-AEF7-4605-9BF9-6EA8F1201CAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8760BF28-E932-4415-9B2D-8D9281E9E5F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8760BF28-E932-4415-9B2D-8D9281E9E5F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8760BF28-E932-4415-9B2D-8D9281E9E5F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E2CC2A-AEF7-4605-9BF9-6EA8F1201CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E2CC2A-AEF7-4605-9BF9-6EA8F1201CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E2CC2A-AEF7-4605-9BF9-6EA8F1201CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E2CC2A-AEF7-4605-9BF9-6EA8F1201CAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
