@@ -5,10 +5,13 @@ namespace TechDM.Shared.Enums
         text, 
         radio,
         checkbox,
+        range,
         email,
         hidden,
-        password
-        
-        
+        password,
+        number,
+        enumeration,
+        start,
+        end
     }
 }

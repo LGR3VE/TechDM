@@ -1,23 +1,23 @@
 using System;
-using System.Collections.Generic;
-using TechDM.Shared.Enums;
 
 namespace TechDM.Shared
 {
-    public class Technologie
+    public class Partner
     {
+        
         public string Id { get; set; }
         
         public string Name { get; set; }
         
-        public Category Category { get; set; }
+        public string Logo { get; set; }
+        
+        public string Website { get; set; }
 
-
-
-
-        public Technologie()
+        public Partner()
         {
             Id = Guid.NewGuid().ToString();
         }
+
+
     }
 }

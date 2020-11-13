@@ -40,15 +40,27 @@ namespace Meh
                     {
                         new Condition
                         {
+                            QuestionId = "0",
+                            RequiredAnswers = new List<Condition.QuestionAnswer>()
+                            {
+                                new Condition.RangeAnswer
+                                {
+                                    Min = 2,
+                                    Max = 5
+                                }
+                            }
+                        },
+                        new Condition
+                        {
                             QuestionId = "1",
                             RequiredAnswers = new List<Condition.QuestionAnswer>()
                             {
-                               new Condition.RangeAnswer
-                               {
-                                   Min = 10,
-                                   Max = 20,
-                                   Weight = 50
-                               }
+                                new Condition.RangeAnswer
+                                {
+                                    Min = 10,
+                                    Max = 20,
+                                    Weight = 50
+                                }
                             }
                         },
                         new Condition
@@ -73,33 +85,34 @@ namespace Meh
             {
                 foreach (var condition in technology.Conditions)
                 {
-                    var answers = UserAnswers.FirstOrDefault(ua => ua.QuestionId == condition.QuestionId).Answers;
+                    var answers = UserAnswers.FirstOrDefault(ua => ua.QuestionId == condition.QuestionId)?.Answers;
                         
-                        foreach (var questionAnswer in answers)
+                    foreach (var questionAnswer in answers)
+                    {
+                        switch (questionAnswer)
                         {
-                            switch (questionAnswer)
-                            {
-                                case UserAnswer.MultipleChoiseAnswer multipleChoiseAnswer:
+                            case UserAnswer.MultipleChoiseAnswer multipleChoiseAnswer:
                                     
-                                    foreach (var requiredAnswer in condition.RequiredAnswers.OfType<Condition.MultipleChoiseAnswer>())
-                                    {
-                                       // Add points requiredAnswer.AnswerId
+                                
+                                foreach (var requiredAnswer in condition.RequiredAnswers.OfType<Condition.MultipleChoiseAnswer>())
+                                {
+                                    // Add points requiredAnswer.AnswerId
 
-                                    }
+                                }
                                     
-                                    break;
-                                case UserAnswer.RangeAnswer rangeAnswer:
+                                break;
+                            case UserAnswer.RangeAnswer rangeAnswer:
                                     
-                                    foreach (var requiredAnswer in condition.RequiredAnswers.OfType<Condition.RangeAnswer>())
-                                    {
-                                        // Add points requiredAnswer.Min
-                                    }
+                                foreach (var requiredAnswer in condition.RequiredAnswers.OfType<Condition.RangeAnswer>())
+                                {
+                                    // Add points requiredAnswer.Min
+                                }
                                     
-                                    break;
-                                default:
-                                    throw new ArgumentOutOfRangeException(nameof(questionAnswer));
-                            }
+                                break;
+                            default:
+                                throw new ArgumentOutOfRangeException(nameof(questionAnswer));
                         }
+                    }
                     
                 }
             }

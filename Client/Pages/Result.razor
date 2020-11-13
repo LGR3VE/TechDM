@@ -1,0 +1,67 @@
+@page "/result"
+@using TechDM.Shared.Model
+<h3>And here is your result</h3>
+
+
+<div class="row">
+    
+    
+    @foreach (var tech in Technologies)
+    {
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+            <div class="card-result">
+                <div class="card-result__image-container">
+                    <img class="card-result__image" src="@tech.LogoUrl" alt="@tech.Name Logo">
+                </div>
+
+                <svg class="card-result__svg" viewBox="0 0 800 500">
+                    <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+                    <path class="card-result__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+                </svg>
+
+                <div class="card-result__content">
+                    <div class="result-score">
+                        <div class="result-score_text">
+                            @if (ScoreList.Any(s => s.TechnologyId == tech.Id))
+                            {
+                                @ScoreList.Find(s => s.TechnologyId == tech.Id).Score
+                            }
+                            else
+                            {
+                                @((MarkupString) "100")
+                            }
+                        </div>
+                    </div>
+                    <h3 class="card-result__title">@tech.Name</h3>
+                    <p class="card-result__subheader">@tech.SubHeader</p>
+                    
+                    <details class="card-result__description">
+                        <summary>more</summary>
+                        <p>@((MarkupString) tech.Description)</p>
+                    </details>
+
+                </div>
+            </div>
+        </div>
+    }
+    
+</div>
+
+
+
+
+@code {
+    
+    
+    private List<Technology> Technologies { get; set; }
+    private List<TechnologyScore> ScoreList { get; set; }
+
+
+    protected override void OnParametersSet()
+    {
+        //TODO Connect calculate Score
+        ScoreList = new List<TechnologyScore>();
+        Technologies = SeedData.TechnologyData.ToList();
+    }
+
+}

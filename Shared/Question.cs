@@ -6,19 +6,12 @@ namespace TechDM.Shared
 {
     public class Question
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string QuestionText { get; set; }
 
+        public string QuestionHelpText { get; set; }
         public QuestionType QuestionType { get; set; }
-        
-        public IEnumerable<QuestionAnswer> Answers { get; set; }
-
-        public double Weight { get; set; }
-
-        public Question()
-        {
-            Id = Guid.NewGuid().ToString();
-        }
+        public IEnumerable<Answer> Answers { get; set; }
     }
     
 }

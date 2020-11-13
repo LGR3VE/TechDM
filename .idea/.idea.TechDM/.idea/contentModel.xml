@@ -21,8 +21,12 @@
         <e p="Pages" t="Include">
           <e p="Counter.razor" t="Include" />
           <e p="FetchData.razor" t="Include" />
+          <e p="Help.razor" t="Include" />
           <e p="Index.razor" t="Include" />
+          <e p="MOdel.razor" t="Include" />
           <e p="Overview.razor" t="Include" />
+          <e p="Partners.razor" t="Include" />
+          <e p="result.razor" t="Include" />
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
@@ -31,18 +35,23 @@
         <e p="Shared" t="Include">
           <e p="AppFooter.razor" t="Include" />
           <e p="AppHeader.razor" t="Include" />
-          <e p="Cards" t="Include">
+          <e p="Compontents" t="Include">
+            <e p="BackButton.razor" t="Include" />
             <e p="DefaultCard.razor" t="Include" />
+            <e p="ProgressBar.razor" t="Include" />
+            <e p="SuccessCheckmark.razor" t="Include" />
+            <e p="SurveyPrompt.razor" t="Include" />
           </e>
           <e p="LoadingPage.razor" t="Include" />
           <e p="MainLayout.razor" t="Include" />
           <e p="NavMenu.razor" t="Include" />
-          <e p="SurveyPrompt.razor" t="Include" />
         </e>
         <e p="TechDM.Client.csproj" t="IncludeRecursive" />
         <e p="wwwroot" t="Include">
           <e p="css" t="Include">
             <e p="app.css" t="Include" />
+            <e p="app.css.map" t="Include" />
+            <e p="app.scss" t="Include" />
             <e p="bootstrap" t="Include">
               <e p="bootstrap.min.css" t="Include" />
               <e p="bootstrap.min.css.map" t="Include" />
@@ -69,9 +78,23 @@
           <e p="favicon.ico" t="Include" />
           <e p="icon-512.png" t="Include" />
           <e p="img" t="Include">
+            <e p="overview.svg" t="Include" />
+            <e p="technologies" t="Include">
+              <e p="asana.png" t="Include" />
+              <e p="Blazor.png" t="Include" />
+              <e p="googleWorkspace.png" t="Include" />
+              <e p="hubspot.jpg" t="Include" />
+              <e p="Jira.png" t="Include" />
+              <e p="office365.png" t="Include" />
+              <e p="Salesforce.png" t="Include" />
+              <e p="SAP.png" t="Include" />
+            </e>
             <e p="UHH_Logo.png" t="Include" />
           </e>
           <e p="index.html" t="Include" />
+          <e p="js" t="Include">
+            <e p="panzoom.js" t="Include" />
+          </e>
           <e p="manifest.json" t="Include" />
           <e p="service-worker.js" t="Include" />
           <e p="service-worker.published.js" t="Include" />
@@ -89,6 +112,7 @@
         <e p="Database" t="Include">
           <e p="ApplicationDbContext.cs" t="Include" />
         </e>
+        <e p="debug.log" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -113,12 +137,19 @@
         <e p="TechDM.Server.csproj" t="IncludeRecursive" />
       </e>
       <e p="Shared" t="IncludeRecursive">
+        <e p="Answer.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="DecisionModel.cs" t="Include" />
         <e p="Enums" t="Include">
           <e p="Category.cs" t="Include" />
           <e p="Languages.cs" t="Include" />
           <e p="QuestionType.cs" t="Include" />
+        </e>
+        <e p="Model" t="Include">
+          <e p="Condition.cs" t="Include" />
+          <e p="DecisionModel.cs" t="Include" />
+          <e p="SeedData.cs" t="Include" />
+          <e p="Technology.cs" t="Include" />
+          <e p="TechnologyScore.cs" t="Include" />
         </e>
         <e p="ModelAnswer.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
@@ -128,10 +159,10 @@
             </e>
           </e>
         </e>
+        <e p="Partner.cs" t="Include" />
         <e p="Question.cs" t="Include" />
-        <e p="QuestionAnswer.cs" t="Include" />
         <e p="TechDM.Shared.csproj" t="IncludeRecursive" />
-        <e p="Technologie.cs" t="Include" />
+        <e p="UserAnswer.cs" t="Include" />
         <e p="WeatherForecast.cs" t="Include" />
       </e>
       <e p="TechDM.sln" t="IncludeFlat" />

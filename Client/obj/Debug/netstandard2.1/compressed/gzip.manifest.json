@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\_2wwQvw0GOa3aTPIl0wOh5E3xvvnZUJS1vc5JHW_-nA=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\QDlFQ-G7Jp3uInsY1Gl6IbsjhGdan1Z8s4gpxRi-i1I=.hash",
       "Source": "E:\\dev\\TechDM\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\TechDM.Client.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/TechDM.Client.dll.gz"
     },
@@ -221,7 +221,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Pb9rEjm5jCgm6-OjqI8AJC7WA6qsLWfERIkwmykm5Rg=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\CkfhYdwaZ0qg1R7QVf0PGKntlsACmLEjpULPYTtwPho=.hash",
       "Source": "E:\\dev\\TechDM\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\TechDM.Shared.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/TechDM.Shared.dll.gz"
     },
@@ -291,7 +291,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\19HAkEzUIwIWzxlCWHqMamdO0WEYq-TRQl8rINO7wY4=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\d8BKJ6uaGhYyhL83HsTSg8ZuIJbXeQwBozKcVFqN_J4=.hash",
       "Source": "E:\\dev\\TechDM\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\TechDM.Client.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/TechDM.Client.pdb.gz"
     },
@@ -301,7 +301,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Linq.Dynamic.Core.pdb.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\FMsBYa9WcXwbIcgFOVnGSaf-W8a7Lko7ZHPAYERt-uo=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\elF_W348wEF8rIjGmRPj0OgCYCxFB72kKtE9Q7lDy0I=.hash",
       "Source": "E:\\dev\\TechDM\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\TechDM.Shared.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/TechDM.Shared.pdb.gz"
     },
@@ -326,12 +326,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\VPGyTabwp-njmXeJmFRIAeWUVJOIZlkTKKTBL2yBEMg=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ctnYcSDyCg4CRMVUO0ydO2neceAB2axva_9rSqZ4EdM=.hash",
       "Source": "E:\\dev\\TechDM\\Client\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\pZOrKS_8EqwhIltyG9_SD-jgADUhJ9pQzYTw5gQ-KM4=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\TzGOSYozvIQcu-gEoozt4V-O-W3izslOgmn89axXG-A=.hash",
       "Source": "E:\\dev\\TechDM\\Client\\obj\\Debug\\netstandard2.1\\blazor\\service-worker-assets.js",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\service-worker-assets.js.gz"
     }

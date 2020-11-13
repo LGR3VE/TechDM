@@ -34,7 +34,7 @@ namespace TechDM.Server.Controllers
 
             List<Question> questionList;
             
-            using (StreamReader r = new StreamReader("./QuestionList.json"))
+            using (StreamReader r = new StreamReader("./ShownQuestionList.json"))
             {
                 string json = r.ReadToEnd();
                 questionList = JsonConvert.DeserializeObject<List<Question>>(json);
@@ -45,9 +45,9 @@ namespace TechDM.Server.Controllers
         
         // GET: api/question/{id}
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(string id)
+        public async Task<IActionResult> Get(int id)
         {
-            var question = await _context.Questions.FirstOrDefaultAsync(c=>c.Id ==id);
+            var question = await _context.Questions.FirstOrDefaultAsync(c=>c.Id == id);
             if (question == null)
             {
                 return NotFound();
@@ -76,72 +76,14 @@ namespace TechDM.Server.Controllers
         
         //DELETE: api/question/{id}
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(int id)
         {
             var question = new Question() { Id = id };
             _context.Remove(question);
             await _context.SaveChangesAsync();
             return NoContent();
         }
-        
-        
-        
-        
-        public List<Question> SeedQuestions()
-        {
-            return new List<Question>()
-            {
-                new Question()
-                {
-                    QuestionText = "Die erste Frage",
-                    QuestionType = QuestionType.radio,
-                    Answers = new[]
-                    {
-                        new QuestionAnswer()
-                        {
-                            AnswerText = "Antwort 1"
-                        },
-                        new QuestionAnswer()
-                        {
-                            AnswerText = "Antwort 2"
-                        }
-                    }
-                },
 
-                new Question()
-                {
-                    QuestionText = "Die zweite Frage",
-                    QuestionType = QuestionType.checkbox,
-                    Answers = new[]
-                    {
-                        new QuestionAnswer()
-                        {
-                            AnswerText = "Antwort 1"
-                        },
-                        new QuestionAnswer()
-                        {
-                            AnswerText = "Antwort 2"
-                        }
-                    }
-                },
-            
-                new Question()
-                {
-                    QuestionText = "Die dritte Frage",
-                    QuestionType = QuestionType.text,
-                    Answers = new []
-                    {
-                        new QuestionAnswer()
-                        {
-                            AnswerPlaceholder = "Hier Text"
-                        }
-                    }
-                },
 
-            };
-        }
-        
-        
-        
     }
 }

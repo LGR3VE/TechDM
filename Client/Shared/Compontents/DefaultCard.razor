@@ -1,0 +1,240 @@
+@using TechDM.Shared
+@using TechDM.Shared.Enums
+@using System.Collections
+@using Microsoft.Extensions.Logging
+@using TechDM.Client.Pages
+@inject ILogger<DefaultCard> logger;
+
+
+
+<EditForm Model="Question" OnValidSubmit="@OnSubmit">
+    <div class="card">
+    
+        <div class="card-header">
+            @Question.QuestionText
+        </div>
+
+        <div class="card-body">
+        
+
+            @if (Question.QuestionType == QuestionType.start)
+            {
+                <p>@Question.QuestionHelpText</p>
+            }
+            
+            
+            
+            @if (Question.QuestionType == QuestionType.text)
+            {
+                @foreach (var answerRaw in Question.Answers)
+                {
+                    var answer = (Answer.TextAnswer) answerRaw;
+                    <div class="form-group row">
+
+                        <label class="col-sm-5" for="@answer.Id">@answer.AnswerText</label>
+                        <div class="col-sm-7">
+                            <input @bind="answer.TempValue" type="text" name="@Question.Id" 
+                                    class="form-control" 
+                                    id="@answer.Id"
+                                    aria-describedby="@answer.AnswerDescription"
+                                    placeholder="@answer.AnswerPlaceholder">
+                        </div>
+                    </div>
+                }
+
+            }
+
+            @if (Question.QuestionType == QuestionType.number)
+            {
+
+                @foreach (var answerRaw in Question.Answers)
+                {
+                    var answer = (Answer.TextAnswer) answerRaw;
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <input @bind="answer.TempValue" type="number" name="@Question.Id" class="form-control" id="@answer.Id"
+                                    aria-describedby="@answer.AnswerDescription"
+                                    placeholder="@answer.AnswerPlaceholder">
+                        </div>
+                        <label class="col-sm-10 col-form-label" for="@answer.Id">@answer.AnswerText</label>
+                    </div>
+
+                }
+
+            }
+            
+
+            @if (Question.QuestionType == QuestionType.checkbox)
+            {
+                
+                <div class="card-answer">
+                    <ul>
+                        
+                        @foreach (var answerRaw in Question.Answers)
+                        {
+                            var answer = (Answer.MultipleChoiceAnswer) answerRaw;
+                            <li>
+                                <input @bind="answer.Selected" type="@Question.QuestionType" checked="@answerRaw.Selected" id="@answer.Id" name="@Question.Id">
+                                <label for="@answer.Id"> @answer.AnswerText </label>
+                            </li>
+                        }
+                    </ul>
+
+                    <p>Selected:
+                        @{
+                            var selected = Question.Answers.Where(a => a.Selected).Select(a => a.Id);
+                        }
+                        @string.Join(", ", selected)
+
+                    </p>
+                </div>
+            }
+            
+            @if (Question.QuestionType == QuestionType.radio)
+            {
+                
+                <div class="card-answer">
+                    <ul>
+                        @foreach (var answerRaw in Question.Answers)
+                        {
+                            <li>
+                                <input type="@Question.QuestionType"
+                                        id="@answerRaw.Id" 
+                                        name="@Question.Id"
+                                        value="@answerRaw.Id"
+                                        checked="@answerRaw.Selected"
+                                        @onchange="@(() => 
+                                                   { foreach (var answer in Question.Answers) {answer.Selected = false;}
+                                                       answerRaw.Selected = !answerRaw.Selected;
+                                                   })">
+                                <label for="@answerRaw.Id"> @answerRaw.AnswerText </label>
+                            </li>
+                        }
+                    </ul>
+            
+                    <p>Selected:
+                        @{
+                            var selected = Question.Answers.Where(a => a.Selected).Select(a => a.Id);
+                        }
+                        @string.Join(", ", selected)
+            
+                    </p>
+                </div>
+            }
+            
+
+            
+            @if (Question.QuestionType == QuestionType.range)
+            {
+                <div class="form-check card-answer">
+                    @foreach (var answer in Question.Answers)
+                    {
+                        var rangeAnswer1 = (Answer.RangeAnswer) answer;
+
+                        <input class="" name="@Question.Id"
+                               type="@Question.QuestionType"
+                               id="@answer.Id"
+                               @onchange="@(e => { answer.TempValue = e.Value.ToString(); })"
+                               min="@rangeAnswer1.min"
+                               max="@rangeAnswer1.max"
+                               step="1">
+
+                        <label class="" for="@answer.Id">
+                            @answer.AnswerText
+                        </label>
+                    }
+                </div>
+            }
+            
+            
+            @if (Question.QuestionType == QuestionType.enumeration)
+            {
+                <ul class="ks-cboxtags">
+                    @foreach (var answerRaw in Question.Answers)
+                    {
+                        <li>
+                            <input @bind="answerRaw.Selected" type="checkbox" id="@answerRaw.Id">
+                            <label for="@answerRaw.Id">@answerRaw.AnswerText</label>
+                        </li>
+
+                    }
+                </ul>
+            }
+            
+            
+            @if (Question.QuestionType == QuestionType.end)
+            {
+                @if (CalculateResult)
+                {
+                    <div class="">
+                        <div class="placeholder-spinner"></div>
+                        <span>Please while we are proceeding the results</span>
+                    </div>
+                }
+                else
+                {
+                    <div class="ModelSuccess">
+                        <SuccessCheckmark Visible="true"></SuccessCheckmark>
+                        <h3>Technology-scores sucessfully calculated.</h3>
+                    </div>
+                }
+                
+            }
+            
+            
+            
+
+        </div>
+    </div>
+    
+    <BackButton></BackButton>
+    
+    @if (Question.QuestionType == QuestionType.start)
+    {
+        <button type="submit" class="btn btn-success card-nextbtn">Start</button>
+    }
+    else if (Question.QuestionType == QuestionType.end && !CalculateResult)
+    {
+        <a href="/result" class="btn btn-success card-nextbtn">results</a>
+    }
+    else
+    {
+        <button type="submit" class="btn btn-outline-success card-nextbtn">next</button>
+    }
+    
+</EditForm>
+
+
+
+@code {
+
+    [Parameter]
+    public Question Question { get; set; }
+
+    [Parameter]
+    public EventCallback OnSubmit { get; set; }
+    
+    [Parameter]
+    public EventCallback<Question> QuestionChanged { get; set; }
+
+    private bool CalculateResult { get; set; }
+
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Question.QuestionType == QuestionType.end)
+        {
+            CalculateResult = true;
+            await CalculateResultAsync();
+        }
+    }
+
+    private async Task CalculateResultAsync()
+    {
+        var rmd = new Random();
+        var waitTime = rmd.Next(2000, 3000);
+        await Task.Delay(waitTime);
+        CalculateResult = false;
+    }
+
+}

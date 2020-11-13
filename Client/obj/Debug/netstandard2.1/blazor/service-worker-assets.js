@@ -101,8 +101,16 @@
       "url": "_content\/Radzen.Blazor\/Radzen.Blazor.js"
     },
     {
-      "hash": "sha256-zTxaPepnnPYkehMEghk1R2VbEb84K89eiGQAnKE9FGo=",
+      "hash": "sha256-odMMqF0Tf\/68fsM1IHdke9HQU8ixwbWBJ3UnxDue4Bg=",
       "url": "css\/app.css"
+    },
+    {
+      "hash": "sha256-7FY+JI8cqY1twcURaOh\/kdZgnURUOryM3BgovGexLE0=",
+      "url": "css\/app.css.map"
+    },
+    {
+      "hash": "sha256-oIZ4A57Ao80i8k3yLAuPDXnDyQM5C0xAfQlbgACWPO4=",
+      "url": "css\/app.scss"
     },
     {
       "hash": "sha256-rldnE7wZYJj3Q43t5v8fg1ojKRwyt0Wtfm+224CacZs=",
@@ -149,7 +157,7 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
-      "hash": "sha256-ux7Byv+aeUWhAvjXDIvJS4u8r6ae\/M4nHQHGB+07N5U=",
+      "hash": "sha256-MUuOSw8fK\/G1fqooNNKdBC7G3MOB2Ydtm1rSBdwsQLI=",
       "url": "debug.log"
     },
     {
@@ -161,19 +169,59 @@
       "url": "icon-512.png"
     },
     {
+      "hash": "sha256-GsSoombCydA07gN2oD+yKO1n89rfQeYWHHa5Do5kyO4=",
+      "url": "img\/overview.svg"
+    },
+    {
+      "hash": "sha256-MunHx6HuqYbg1rVWXw5msvigRnkNhbWZWHFe9VhQYYs=",
+      "url": "img\/technologies\/asana.png"
+    },
+    {
+      "hash": "sha256-aO5QHBE8NFfjFGhZ7fFWs4GqzYpOaUiwEVzp3Gmukqo=",
+      "url": "img\/technologies\/Blazor.png"
+    },
+    {
+      "hash": "sha256-mLLm6MhgWhFlaq7vevoR67nTVtLDG\/cOChTdvZDTKbg=",
+      "url": "img\/technologies\/googleWorkspace.png"
+    },
+    {
+      "hash": "sha256-Ngul0CbbYj9rRuvYuTsP0YJlCcfuH2Yra12syJCfIvk=",
+      "url": "img\/technologies\/hubspot.jpg"
+    },
+    {
+      "hash": "sha256-Il22LEyHcmEu\/khQf78uz+9pksjUvVktr+qj6Cx9Ge4=",
+      "url": "img\/technologies\/Jira.png"
+    },
+    {
+      "hash": "sha256-7rntde43p6z8OUfnYd9ZBBYxGdiXnwDdLe+QM1wdPSk=",
+      "url": "img\/technologies\/office365.png"
+    },
+    {
+      "hash": "sha256-Hk6ktNxCdf4r6dLLc3vm74o4jsxQoXzQVtvwVHVfRRI=",
+      "url": "img\/technologies\/Salesforce.png"
+    },
+    {
+      "hash": "sha256-yE4JLNzuvNpigZoLZXddRL+9eVSXboqX3dJ\/zbZ50nQ=",
+      "url": "img\/technologies\/SAP.png"
+    },
+    {
       "hash": "sha256-H6RcxteNvbDa30iLR7Y3RgWRtESsoNlLWVZtHfKd8sE=",
       "url": "img\/UHH_Logo.png"
     },
     {
-      "hash": "sha256-Z4jmKJU7RoHtickVQKaBzOrAjlDJMp6EmH3HePKIcfs=",
+      "hash": "sha256-Ab\/IaTs7WUbRJIMWO98V+7ppjYtZOw\/R+XEjf0mafSI=",
       "url": "index.html"
+    },
+    {
+      "hash": "sha256-Onl\/DIQZ4fgWtv5CeFQ3xUUQ2MtCAVDY0V6YVx\/4934=",
+      "url": "js\/panzoom.js"
     },
     {
       "hash": "sha256-9\/ETxST3UbXVpwWK9ijgS\/BQipR153erpWUTuWdazBU=",
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-+2wwQvw0GOa3aTPIl0wOh5E3xvvnZUJS1vc5JHW+\/nA=",
+      "hash": "sha256-QDlFQ\/G7Jp3uInsY1Gl6IbsjhGdan1Z8s4gpxRi\/i1I=",
       "url": "_framework\/_bin\/TechDM.Client.dll"
     },
     {
@@ -349,7 +397,7 @@
       "url": "_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll"
     },
     {
-      "hash": "sha256-Pb9rEjm5jCgm6\/OjqI8AJC7WA6qsLWfERIkwmykm5Rg=",
+      "hash": "sha256-CkfhYdwaZ0qg1R7QVf0PGKntlsACmLEjpULPYTtwPho=",
       "url": "_framework\/_bin\/TechDM.Shared.dll"
     },
     {
@@ -405,7 +453,7 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-19HAkEzUIwIWzxlCWHqMamdO0WEYq\/TRQl8rINO7wY4=",
+      "hash": "sha256-d8BKJ6uaGhYyhL83HsTSg8ZuIJbXeQwBozKcVFqN+J4=",
       "url": "_framework\/_bin\/TechDM.Client.pdb"
     },
     {
@@ -413,7 +461,7 @@
       "url": "_framework\/_bin\/System.Linq.Dynamic.Core.pdb"
     },
     {
-      "hash": "sha256-FMsBYa9WcXwbIcgFOVnGSaf\/W8a7Lko7ZHPAYERt\/uo=",
+      "hash": "sha256-elF+W348wEF8rIjGmRPj0OgCYCxFB72kKtE9Q7lDy0I=",
       "url": "_framework\/_bin\/TechDM.Shared.pdb"
     },
     {
@@ -433,9 +481,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-VPGyTabwp\/njmXeJmFRIAeWUVJOIZlkTKKTBL2yBEMg=",
+      "hash": "sha256-ctnYcSDyCg4CRMVUO0ydO2neceAB2axva+9rSqZ4EdM=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "vmM1ltws"
+  "version": "IDDLaRYO"
 };

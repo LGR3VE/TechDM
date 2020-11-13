@@ -1,0 +1,37 @@
+@page "/partners"
+@using TechDM.Shared
+
+<h3>Thanks to all our Partners</h3>
+<div class="row">
+
+    @foreach (var partner in PartnerList)
+    {
+        <div class="col-3 partner">
+            <img src="@partner.Logo" alt="@partner.Name"/>
+            <a href="@partner.Website"></a>
+        </div>
+       
+    }
+</div>
+    
+    
+@code {
+    
+
+    private List<Partner> PartnerList { get; set; }
+
+
+    protected override void OnInitialized()
+    {
+        PartnerList = new List<Partner>
+        {
+            new Partner()
+            {
+                Name = "HARCIS",
+                Logo = "/img/logos/Harcis.png",
+                Website = "https://www.bwl.uni-hamburg.de/harcis"
+            }
+        };
+    }
+
+}

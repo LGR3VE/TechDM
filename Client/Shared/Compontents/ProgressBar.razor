@@ -1,0 +1,26 @@
+
+<div class="ModelProgressBar">
+    <label for="ModelProgress">Progress: @(Progress * 100)%</label>
+    <progress id="ModelProgress" max="@Max" value="@ProgressString"></progress>
+</div>
+
+
+@code {
+    
+    [Parameter]
+    public double Progress { get; set; }
+    
+    [Parameter]
+    public double Min { get; set; }
+    
+    [Parameter]
+    public double Max { get; set; }
+    
+    private string ProgressString { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        ProgressString = Progress.ToString(System.Globalization.CultureInfo.InvariantCulture);
+    }
+
+}

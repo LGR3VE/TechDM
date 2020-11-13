@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using TechDM.Shared;
+using TechDM.Shared.Model;
 
 namespace TechDM.Server.Database
 {
@@ -13,7 +14,7 @@ namespace TechDM.Server.Database
 
         public DbSet<Question> Questions { get; set; }
         
-        public DbSet<Technologie> Technologies { get; set; }
+        public DbSet<Technology> Technologies { get; set; }
         
     }
 }
