@@ -11,13 +11,7 @@
         <e p="_Imports.razor" t="Include" />
         <e p="App.razor" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netstandard2.1" t="Include">
-              <e p="TechDM.Client.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
+        <e p="obj" t="ExcludeRecursive" />
         <e p="Pages" t="Include">
           <e p="Counter.razor" t="Include" />
           <e p="FetchData.razor" t="Include" />
@@ -113,14 +107,7 @@
           <e p="ApplicationDbContext.cs" t="Include" />
         </e>
         <e p="debug.log" t="Include" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="TechDM.Server.AssemblyInfo.cs" t="Include" />
-              <e p="TechDM.Server.RazorAssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
+        <e p="obj" t="ExcludeRecursive" />
         <e p="Pages" t="Include">
           <e p="Error.cshtml" t="Include" />
           <e p="Error.cshtml.cs" t="Include" />
@@ -152,13 +139,7 @@
           <e p="TechnologyScore.cs" t="Include" />
         </e>
         <e p="ModelAnswer.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netstandard2.1" t="Include">
-              <e p="TechDM.Shared.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
+        <e p="obj" t="ExcludeRecursive" />
         <e p="Partner.cs" t="Include" />
         <e p="Question.cs" t="Include" />
         <e p="TechDM.Shared.csproj" t="IncludeRecursive" />
