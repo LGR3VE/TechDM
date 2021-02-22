@@ -1,9 +1,23 @@
+@using TechDM.Client.Services
+@inject AppData AppData
+
 <div class="loading-container">
     <div class="placeholder-header">
     </div>
     
     <div class="placeholder-content">
-      <div class="placeholder-spinner"></div>
-      <span>Decision model is loading</span>
+        <div class="placeholder-spinner"></div>
+        <span>Decision model is loading</span>
     </div>
 </div>
+
+
+@code
+{
+    protected override void OnParametersSet()
+    {
+    //SET DEBUG MODE
+        AppData.DebugEnabled = true;
+    }
+    
+}

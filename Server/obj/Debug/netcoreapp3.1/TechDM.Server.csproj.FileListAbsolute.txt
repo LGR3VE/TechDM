@@ -5,11 +5,9 @@ E:\dev\TechDM\Server\obj\Debug\netcoreapp3.1\TechDM.Server.csproj.CoreCompileInp
 E:\dev\TechDM\Server\obj\Debug\netcoreapp3.1\TechDM.Server.MvcApplicationPartsAssemblyInfo.cache
 E:\dev\TechDM\Server\obj\Debug\netcoreapp3.1\TechDM.Server.RazorAssemblyInfo.cache
 E:\dev\TechDM\Server\obj\Debug\netcoreapp3.1\TechDM.Server.RazorAssemblyInfo.cs
-E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\TechDM.Client.StaticWebAssets.xml
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\appsettings.Development.json
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\appsettings.json
-E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\QuestionList.json
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\BlazorDebugProxy\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\BlazorDebugProxy\cs\Microsoft.CodeAnalysis.resources.dll
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\BlazorDebugProxy\de\Microsoft.CodeAnalysis.CSharp.resources.dll
@@ -178,15 +176,12 @@ E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Web
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.WebAssembly.dll
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
-E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
@@ -228,3 +223,6 @@ E:\dev\TechDM\Server\obj\Debug\netcoreapp3.1\TechDM.Server.genruntimeconfig.cach
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Npgsql.dll
 E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+E:\dev\TechDM\Server\obj\Debug\netcoreapp3.1\scopedcss\bundle\TechDM.Server.styles.css
+E:\dev\TechDM\Server\bin\Debug\netcoreapp3.1\Plk.Blazor.DragDrop.dll

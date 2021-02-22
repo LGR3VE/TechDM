@@ -1,4 +1,55 @@
-﻿
+﻿/*--------------------------------------------------------------
+# webkist helper
+--------------------------------------------------------------*/
+@mixin transition($params) {
+  -webkit-transition: $params;
+  -moz-transition: $params;
+  -khtml-transition: $params;
+  -o-transition: $params;
+  transition: $params;
+}
+
+@mixin scale($params) {
+  -webkit-transform: scale($params);
+  -moz-transform: scale($params);
+  -khtml-transform: scale($params);
+  -o-transform: scale($params);
+  transform: scale($params);
+}
+
+@mixin box-shadow($params) {
+  -webkit-box-shadow:$params;
+  -moz-box-shadow:$params;
+  -khtml-box-shadow:$params;
+  -o-box-shadow:$params;
+  box-shadow:$params;
+}
+
+@mixin rotate($params) {
+  -webkit-transform: rotate($params);
+  -moz-transform: rotate($params);
+  -khtml-transform: rotate($params);
+  -o-transform: rotate($params);
+  transform: rotate($params);
+}
+
+@mixin opacity($opacity) {
+  -webkit-opacity:$opacity;
+  -moz-opacity:$opacity;
+  -khtml-opacity:$opacity;
+  -o-opacity:$opacity;
+  opacity:$opacity;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -khtml-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
 /* ===================================================================
  * # basic/base setup styles
  *
@@ -101,7 +152,7 @@ header {
 }
 
 header h1 {
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(110, 110, 110);
 }
 
@@ -112,7 +163,7 @@ header .logo img {
 @media only screen and (min-width: 800px) {
 
   header h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   header .logo img {
@@ -126,7 +177,18 @@ header .logo img {
 @media only screen and (min-width: 1200px) {
 
   header h1 {
-    font-size: 40px;
+    font-size: 30px;
+
+  }
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+  header h1 {
+    font-size: 30px;
 
   }
 
@@ -147,35 +209,176 @@ header .logo img {
 .contend {
   width: 100%;
   background-color: rgb(250, 250, 250);
-  padding: 24px 12px 0 32px;
+  padding: 24px 12px 0 12px;
   overflow: auto;
   position: relative;
 }
 
-.card {
+.question-card {
   min-width: 50%;
   width: auto;
   height: auto;
   position: relative;
   border-radius: 8px;
-  box-shadow: rgba(106, 196, 255, 0.6) 0px 2px 4px, rgba(106, 196, 255, 0.6) 0px 2px 12px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 16px;
   animation: 0.3s ease-in-out 0s 1 normal none running lbWRkT;
   transition: all 0.2s ease-in 0s;
   margin-bottom: 20px;
+  background-color: white;
+  overflow:hidden;
 }
 
-.card-header {
-  font-weight: bold;
-}
-
-.card-answer {
+.question-card img{
+  max-width: 100%;
+  max-height: 450px;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: ImageFadeIn .8s 0s forwards;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.question-card-header {
+  font-size: 18px;
+  padding: 20px 20px 16px 20px;
+}
+
+.question-card-title {
+  font-size: 26px;
+  color: black;
+  font-weight: 700;
+  margin: 0px 0px 5px;
+}
+.question-card-subtitle {
+  font-size: 16px;
+  color: gray;
+  margin: 0px 0px 4px;
+  font-weight: 700;
+  
+}
+
+.question-card-body {
+  display: block;
+  padding: 20px 20px 16px 20px;
 }
 
 .card-nextbtn {
   margin-bottom: 30px;
 }
 
+/* ===================================================================
+ * Mobile Menue
+ *
+ * ------------------------------------------------------------------- */
+
+a.nav-item.active{
+  border-left: 3px solid #6ac4ff;
+}
+
+@media only screen and (max-width: 1000px) {
+  
+  header h1{
+    padding-left: 40px;
+  }
+  
+  #MobileNavBtn {
+    display: inline;
+    border-top:3px solid #757575;
+    height:25px;
+    width:30px;
+    box-sizing:border-box;
+    position:absolute;
+    z-index:30;
+    left:20px;
+    top:15px;
+    cursor:pointer;
+    @include transition(all 0.3s ease-in);
+    &:before {
+      content:"";
+      display:block;
+      position:absolute;
+      height:3px;
+      width:30px;
+      left:0;
+      background:#757575;
+      top:10px;
+      @include transition(all 0.3s ease-in);
+    }
+    &:after {
+      content:"";
+      display:block;
+      position:absolute;
+      height:3px;
+      width:30px;
+      left:0;
+      background:#757575;
+      bottom:0;
+      @include transition(all 0.3s ease-in);
+    }
+  }
+
+  .sidebar{
+    position:absolute;
+    z-index:10;
+    list-style-type:none;
+    margin:100px 0 0 20px;
+    padding:0;
+    overflow:hidden;
+    li {
+      height:30px;
+      width:0;
+      margin:30px 0;
+      background:#eae8e5;
+      @include transition(all 0.6s ease-in);
+      & + li {
+        margin-left:-40px;
+        & + li {
+          margin-left:-80px;
+          & + li {
+            margin-left:-120px;
+          }
+        }
+      }
+    }
+  }
+  
+  
+}
+
+#MobileNavBtn {
+  display: none;
+}
+
+.mobileNav {
+  
+  #nav li {
+    width:200px;
+    margin-left:0;
+  }
+  
+  #MobileNavBtn {
+    border-color:transparent;
+    &:before {
+      @include rotate(45deg);
+      width:33px;
+      left:-2px;
+    }
+    &:after {
+      @include rotate(135deg);
+      bottom:11px;
+      width:33px;
+      left:-2px;
+    }
+  }
+  
+  #mobileBodyContent {
+    margin-left:320px;
+    @include opacity (0.4);
+  }
+  
+}
 
 /* ===================================================================
  * Form Control
@@ -365,7 +568,7 @@ ul.ks-cboxtags li label {
   cursor: pointer;
 }
 
-ul.ks-cboxtags li label::before {
+ul.ks-cboxtags li label span {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -374,13 +577,13 @@ ul.ks-cboxtags li label::before {
   font-weight: 900;
   font-size: 12px;
   padding: 2px 6px 2px 2px;
-  content: "\f067";
   transition: transform .5s ease-in-out;
 }
 
-ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
-  content: "\f00c";
+ul.ks-cboxtags li input[type="checkbox"]:checked + label span {
+  color: white;
   transition: transform .5s ease-in-out;
+  rotation: 45deg;
 }
 
 ul.ks-cboxtags li input[type="checkbox"]:checked + label {
@@ -432,6 +635,8 @@ ul.ks-cboxtags li input[type="checkbox"]:focus + label {
 
   border-radius: 2px;
   background-size: 35px 2px, 100% 100%, 100% 100%;
+  transition : width 0.8s ease;
+  
 }
 
 
@@ -488,12 +693,6 @@ footer p {
 }
 
 .result-score{
-  height: 15px;
-  width: 10px;
-  display: flex;
-  border: 1px #0f6674;
-  border-radius: 1px;
-  
   
   &_text{
   font-weight: 600;
@@ -521,7 +720,6 @@ footer p {
   }
 
   
-
   &__line {
     opacity: 0;
     animation: LineFadeIn .8s .8s forwards ease-in;
@@ -551,7 +749,7 @@ footer p {
   }
 
   &__content {
-    margin-top: -1rem;
+    margin-top: -1.2rem;
     opacity: 0;
     animation: ContentFadeIn .8s 1.6s forwards;
   }
@@ -815,6 +1013,7 @@ footer p {
   border-radius: 50%;
   -webkit-animation: placeholder-spinner-rotation 0.8s linear 0s infinite normal none running;
   animation: placeholder-spinner-rotation 0.8s linear 0s infinite normal none running;
+  display: inline-block;
 }
 
 
@@ -835,4 +1034,206 @@ footer p {
   position: absolute;
   right: 0.75rem;
   top: 0.5rem;
+}
+
+/*--------------------------------------------------------------
+# Partners screen
+--------------------------------------------------------------*/
+
+section h2{
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 3px solid rgba(65, 65, 65, 0.3);
+}
+
+section#overview{
+  overflow: hidden;
+}
+
+embed#TechOverviewSVG{
+  width: 100%;
+}
+embed#DMOverviewSVG{
+  width: 100%;
+}
+
+
+.partner_card {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 4px 8px;
+  margin: 0 -5px;
+  padding: 10px;
+
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.partner_card h3{
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Contact screen
+--------------------------------------------------------------*/
+.author{
+  margin-bottom: 40px;
+}
+
+.author h3{
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.author img{
+  width: 200px;
+  padding-bottom: 10px;
+}
+
+.author h4{
+  font-size: 22px;
+  
+}
+
+/*--------------------------------------------------------------
+# Results screen
+--------------------------------------------------------------*/
+.ui-accordion{
+  margin-top: 20px;
+  
+}
+
+
+.ui-accordion-header{
+  position: relative;
+  margin: 0 auto 10px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 0 0 1px rgba(236,236,236,1);
+  opacity: 1;
+  transition: box-shadow .2s, opacity .4s;
+
+  &:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .11);
+  }
+}
+
+.ui-accordion-content{
+  background: none;
+}
+
+
+/*--------------------------------------------------------------
+# Drag and Drop
+--------------------------------------------------------------*/
+.plk-dd-inprogess > * {
+  pointer-events: none;
+}
+
+.plk-dd-draggable{
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 16px;
+}
+
+/*dropzone style style*/
+.plk-dd-dropzone {
+  min-height: 50px;
+}
+
+/*drag drop styles*/
+
+.plk-dd-spacing {
+  height: 10px;
+}
+
+.plk-dd-spacing-dragged-over {
+  padding: 25px;
+}
+
+.plk-dd-dragged-over {
+  background-color: lightgray;
+  opacity: 0.6;
+  animation: blinker 1s linear infinite;
+}
+
+.plk-dd-dragged-over > div {
+  background-color: lightgray;
+  opacity: 0.6;
+  animation: blinker 1s linear infinite;
+}
+
+.plk-dd-dragged-over-denied {
+  background-color: red;
+  opacity: 0.6;
+  animation: blinker 1s linear infinite;
+}
+
+.plk-dd-in-transit {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px;
+}
+
+.plk-dd-in-transit > div {
+  background-color: rgba(0,0,0,0.32);
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+/*for flex demo*/
+.plk-flex .plk-dd-spacing {
+  width: 20px;
+  height: auto;
+}
+
+.plk-flex .plk-dd-dragged-over {
+  background-color: lightgray;
+  opacity: 0.6;
+  animation: blinker 1s linear infinite;
+}
+
+.plk-flex .plk-dd-dragged-over > div {
+  background-color: lightgray;
+  opacity: 0.9;
+  animation: blinker 1s linear infinite;
+}
+
+.plk-flex .plk-dd-in-transit {
+  background-color: orangered;
+}
+
+.plk-flex .plk-dd-in-transit > div {
+  background-color: orangered;
+}
+
+.plk-dd-noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }

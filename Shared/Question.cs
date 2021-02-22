@@ -11,7 +11,7 @@ namespace TechDM.Shared
 
         public string QuestionHelpText { get; set; }
         public QuestionType QuestionType { get; set; }
-        public IEnumerable<Answer> Answers { get; set; }
+        public List<Answer> Answers { get; set; }
     }
     
 }

@@ -29,6 +29,7 @@
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {
               "E:\\dev\\TechDM\\Shared\\TechDM.Shared.csproj": {
                 "projectPath": "E:\\dev\\TechDM\\Shared\\TechDM.Shared.csproj"
@@ -44,6 +45,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
@@ -61,11 +63,15 @@
             },
             "Radzen.Blazor": {
               "target": "Package",
-              "version": "[2.15.21, )"
+              "version": "[3.1.0, )"
             },
             "System.Net.Http.Json": {
               "target": "Package",
               "version": "[3.2.0, )"
+            },
+            "blazor-dragdrop": {
+              "target": "Package",
+              "version": "[2.2.2, )"
             }
           },
           "imports": [
@@ -83,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -112,6 +118,7 @@
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -123,6 +130,13 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -138,7 +152,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

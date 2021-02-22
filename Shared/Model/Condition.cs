@@ -12,9 +12,9 @@ namespace TechDM.Shared.Model
         public double Weight { get; set; }
 
 
-        public class QuestionAnswer : UserAnswer.Answer
+        public class QuestionAnswer : UserQuestionAnswer.Answer
         {
-            public double Weight { get; set; }
+            public double? Weight { get; set; }
             
             public int Min { get; set; }
             public int Max { get; set; }

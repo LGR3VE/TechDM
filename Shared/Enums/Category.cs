@@ -4,6 +4,10 @@ namespace TechDM.Shared.Enums
     {
         BusinessManagement,
         CommunicationCollaboration,
-        ItProduct
+        Database,
+        Hosting,
+        MobileApp,
+        Website,
+        DesktopApp
     }
 }

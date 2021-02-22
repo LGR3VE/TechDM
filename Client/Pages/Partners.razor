@@ -1,18 +1,80 @@
 @page "/partners"
 @using TechDM.Shared
+@using TechDM.Shared.Model
 
-<h3>Thanks to all our Partners</h3>
-<div class="row">
-
-    @foreach (var partner in PartnerList)
-    {
-        <div class="col-3 partner">
-            <img src="@partner.Logo" alt="@partner.Name"/>
-            <a href="@partner.Website"></a>
+<section id="partner">
+   <h2>Special thanks to the startups and experts who participated in the research.</h2>
+    
+    
+    <h3 class="mt-5">Experts</h3>
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2 mt-2">
+            <div class="partner_card">
+                <h3>Prof. Dr. Markus Nüttgens</h3>
+                @* <img src="@partner.Logo" alt="@partner.Name"/> *@
+                <a href="https://www.bwl.uni-hamburg.de/harcis/01-zentrum/01-team/chair/markus-nuettgens.html">Universität Hamburg</a>
+            </div>
         </div>
-       
-    }
-</div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2 mt-2">
+            <div class="partner_card">
+                <h3>Prof. Dr. Frank Rump</h3>
+                @* <img src="@partner.Logo" alt="@partner.Name"/> *@
+                <a href="https://pad.gwdg.de/s/rkKcNdEyP">Hochschule Emden/Leer</a>
+            </div>
+        </div>
+        
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2 mt-2">
+            <div class="partner_card">
+                <h3>Dieter Berz-Vöge</h3>
+                @* <img src="@partner.Logo" alt="@partner.Name"/> *@
+                <a href="https://dieter-berz-voege.jimdosite.com/">Business Coaching, Consultant</a>
+            </div>
+        </div>
+        
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2 mt-2">
+            <div class="partner_card">
+                <h3>Jan Henri Kalinowski</h3>
+                @* <img src="@partner.Logo" alt="@partner.Name"/> *@
+                <a href="https://www.linkedin.com/in/jan-henri-kalinowski/">Co-Founder @@ChefTreff & IntoYou</a>
+            </div>
+        </div>
+        
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2 mt-2">
+            <div class="partner_card">
+                <h3>Dennis Müller</h3>
+                @* <img src="@partner.Logo" alt="@partner.Name"/> *@
+                <a href="https://www.linkedin.com/in/dennismu/">Founder @@Amie</a>
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2 mt-2">
+            <div class="partner_card">
+                <h3>Marcel Jenner</h3>
+                @* <img src="@partner.Logo" alt="@partner.Name"/> *@
+                <a href="https://www.parship.de/">Full Stack Developer @@Parship</a>
+            </div>
+        </div>
+        
+
+    </div>
+    
+    
+    <h3 class="mt-5">Startups</h3>
+    <div class="row">
+   
+       @foreach (var partner in PartnerList)
+       {
+           <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2 mt-2">
+               <div class="partner_card">
+                   <h3>@partner.Name</h3>
+                   @* <img src="@partner.Logo" alt="@partner.Name"/> *@
+                   <a href="@partner.Website">@partner.Website</a>
+               </div>
+           </div>
+       }
+   </div> 
+</section>
+
     
     
 @code {
@@ -23,15 +85,7 @@
 
     protected override void OnInitialized()
     {
-        PartnerList = new List<Partner>
-        {
-            new Partner()
-            {
-                Name = "HARCIS",
-                Logo = "/img/logos/Harcis.png",
-                Website = "https://www.bwl.uni-hamburg.de/harcis"
-            }
-        };
+        PartnerList = SeedData.PartnerData.ToList();
     }
 
 }

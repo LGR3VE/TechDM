@@ -1,0 +1,52 @@
+@page "/Test"
+<h3>Test</h3>
+
+<Dropzone Items="Items" TItem="MyItem" OnItemDrop="SetOrder">
+    @context.Name
+</Dropzone>
+
+<p>@Items.First().Name @Items.First().TempValue </p>
+
+<p>ItemList: 
+    @{
+         foreach (var i in Items)
+         {
+             @((MarkupString) (Items.IndexOf(i)+1).ToString() +". "+ i.Name + "\n")
+         }
+    }</p>
+
+
+
+@code {
+    
+    
+    public class MyItem
+    {
+        public string Name { get; set; }
+        public string TempValue { get; set; }
+        
+    }
+    
+    public List<MyItem> Items = new List<MyItem>()
+    {
+        new MyItem(){Name = "Item 1"},
+        new MyItem(){Name = "Item 2"},
+        new MyItem(){Name = "Item 3"}
+    };
+
+
+    ///Reload DOM on next question
+    protected override void OnParametersSet()
+    {
+        
+    }
+    
+    private void SetOrder(MyItem item)
+    {
+        foreach (var i in Items)
+        {
+            i.TempValue = (Items.IndexOf(i) + 1).ToString();
+        }
+    }
+
+}

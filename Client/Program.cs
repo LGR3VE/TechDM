@@ -7,7 +7,9 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Plk.Blazor.DragDrop;
 using Radzen;
+using TechDM.Client.Services;
 
 namespace TechDM.Client
 {
@@ -20,13 +22,18 @@ namespace TechDM.Client
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
-            
+            //Adding useful UI Components
             builder.Services.AddScoped<DialogService>();
             builder.Services.AddScoped<NotificationService>();
             builder.Services.AddScoped<TooltipService>();
             builder.Services.AddScoped<ContextMenuService>();
+
+            //Handles all the AppData Handshake
+            builder.Services.AddSingleton<AppData>();
             
-            
+            //Adding DragAndDrop
+            builder.Services.AddBlazorDragDrop();
+
             await builder.Build().RunAsync();
         }
     }

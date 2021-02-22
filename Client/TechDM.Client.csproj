@@ -7,10 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="blazor-dragdrop" Version="2.2.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.1" PrivateAssets="all" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.1" PrivateAssets="all" />
-    <PackageReference Include="Radzen.Blazor" Version="2.15.21" />
+    <PackageReference Include="Radzen.Blazor" Version="3.1.0" />
     <PackageReference Include="System.Net.Http.Json" Version="3.2.0" />
   </ItemGroup>
 
@@ -20,6 +21,14 @@
 
   <ItemGroup>
     <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\site.webmanifest">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

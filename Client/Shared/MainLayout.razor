@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
 
 
 <AppHeader Title="Decision model for the technology selection at IT-Startups"></AppHeader>
@@ -8,10 +9,19 @@
 
     <NavMenu/>
 
-    <div class="contend">
-        <div class="container">
-            @Body
-        </div>
+    <div class="contend" id="mainContend">
+        @if (NavigationManager.Uri.Contains("overview"))
+        {
+            <div class="container-fluid">
+                @Body
+            </div>
+        }
+        else
+        {
+            <div class="container">
+                @Body
+            </div>
+        }
     </div>
         
     

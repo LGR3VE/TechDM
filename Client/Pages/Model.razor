@@ -7,6 +7,7 @@
 @inject HttpClient Http
 @inject ILogger<Index> Logger;
 @inject NavigationManager Navigation;
+@inject Services.AppData AppData;
 @page "/"
 @page "/{VisibleCardId:int}"
 
@@ -15,11 +16,17 @@
 {
     <DefaultCard @bind-Question="VisibleQuestion" OnSubmit="@NextQuestion"></DefaultCard>
 
-    <p>Selected: @SelectedIdString</p>
-
-    <p>ShownQuestionList: @ShownQuestionList.Count</p>
-    <p>UserAnswers: @UserAnswerList.Count</p>
-    <p>Given Answers: @SelectedUAIdString</p>
+    // DEBUGINFO
+    if (AppData.DebugEnabled)
+    {
+        <p>Selected: @SelectedIdString</p>
+        <p>ShownQuestionList Count: @ShownQuestionList.Count</p>
+        <p>ShownQuestionList: @{foreach (var q in ShownQuestionList)
+                              {@((MarkupString) q.Id.ToString() + ", ")
+                              }}</p>
+        <p>UserQuestionAnswers: @AppData.UserQuestionAnswers.Count</p>
+        <p>Given Answers: @SelectedUAIdString</p>
+    }
 
 }
 
@@ -37,8 +44,6 @@
 
     private List<Question> ShownQuestionList { get; set; }
 
-    private List<UserAnswer> UserAnswerList { get; set; }
-
     private string SelectedIdString { get; set; }
 
     private string SelectedUAIdString { get; set; }
@@ -55,8 +60,8 @@
         ShownQuestionList = FullQuestionList.Where(q => q.Id <= 4).ToList();
         
         
-    //new UserAnswer Object
-        UserAnswerList = new List<UserAnswer>();
+    //new UserQuestionAnswer Object
+        AppData.UserQuestionAnswers = new List<UserQuestionAnswer>();
   
         
     }
@@ -78,87 +83,97 @@
         SurveyProgress = GetProgress();
         
         Logger.LogInformation("Visible Question: " + VisibleQuestion.Id);
-        Logger.LogInformation("Progress Question: " + SurveyProgress);
     }
 
 
-    public void NextQuestion()
+    
+    //1. Save the user answer and checks for the next question to display
+    private void NextQuestion()
     {
         SaveUserAnswers();
 
         var nextQuestionId = NextQuestionId(VisibleCardId ?? 0);
-
-    //Show next question
+        
+        //Show next question
         Navigation.NavigateTo($"/{nextQuestionId}");
     }
 
     
+    //2. Saves the Useranswer
     private void SaveUserAnswers()
     {
-    //Check if not start-page and not end-page
+        //Check if not start-page and not end-page
         if (VisibleCardId != 0 && VisibleCardId != 17 && VisibleCardId != null)
         {
-            
+            //all answers that include Selected or have a TempValue
             var allSelectedAnswers = ShownQuestionList.SelectMany(q => q.Answers.Where(a => a.Selected || a.TempValue != null)).ToList();
             SelectedIdString = string.Join(", ", allSelectedAnswers.Select(a => a.Id));
 
+            //only answers for the last question answered
             var givenAnswersForQuestion = new List<Answer>();
             givenAnswersForQuestion= ShownQuestionList
                 .Where(q => q.Id == VisibleCardId)
                 .SelectMany(q => q.Answers).Where(a => a.Selected || a.TempValue != null).ToList();
             
-            //removes old UserAnswer if already present
-            if (UserAnswerList.Any(a => a.QuestionId == VisibleCardId))
+            //removes old UserQuestionAnswer if already present
+            if (AppData.UserQuestionAnswers.Any(a => a.QuestionId == VisibleCardId))
             {
-                UserAnswerList.RemoveAll(ua => ua.QuestionId == VisibleCardId);
-                Logger.LogWarning("removed: " + VisibleCardId);
+                AppData.UserQuestionAnswers.RemoveAll(ua => ua.QuestionId == VisibleCardId);
+                
+                //DEBUG
+                if (AppData.DebugEnabled)
+                {
+                    Logger.LogWarning("removed: " + VisibleCardId);
+                }
             }
             
             //than adds new Answer
-            UserAnswerList.Add(new UserAnswer()
+            AppData.UserQuestionAnswers.Add(new UserQuestionAnswer()
             {
                 QuestionId = (int) VisibleCardId,
-                Answers = givenAnswersForQuestion.Select(a => new UserAnswer.Answer()
+                Answers = givenAnswersForQuestion.Select(a => new UserQuestionAnswer.Answer()
                 {
                     AnswerId = a.Id, Value = a.TempValue
                 })
             });
-            Logger.LogInformation("Added: " + VisibleCardId);
             
-            Logger.LogInformation(JsonSerializer.Serialize(UserAnswerList));
-            var stringAnswers = UserAnswerList.SelectMany(ua => ua.Answers).Select(a => string.Format($"{a.AnswerId}: {a.Value}"));
-            SelectedUAIdString = string.Join(", ", stringAnswers);
+            //DEBUG
+            if (AppData.DebugEnabled)
+            {
+                Logger.LogInformation("Added: " + VisibleCardId);
+                Logger.LogInformation(JsonSerializer.Serialize(AppData.UserQuestionAnswers));
+                
+                //Format given answers
+                var stringAnswers = AppData.UserQuestionAnswers.SelectMany(ua => ua.Answers).Select(a => string.Format($"{a.AnswerId}: {a.Value}"));
+                SelectedUAIdString = string.Join(", ", stringAnswers);
+            }
         }
-        else
-        {
-    //Start the survey or Calculate Results
-        }
-        
     }
     
-    ///
-    /// Logic of the questions shown
-    ///
+    
+    
+    // 3. Logic of the questions shown
+    // Builds the question branch depending on the given answers by the user
     private int NextQuestionId(int prevQuestionId)
     {
         //first branch
-        if (GetUserAnswerByAnswerId("A1") != null && ShownQuestionList.All(q => q.Id != 5))
+        if (GetUserAnswerByAnswerId("D1") != null && ShownQuestionList.All(q => q.Id != 5))
         {
             ShownQuestionList.Add(FullQuestionList.Find(u => u.Id == 5));
         }
         
         //second branch
-        if (GetUserAnswerByAnswerId("A2") != null && ShownQuestionList.All(q => q.Id != 6))
+        if (GetUserAnswerByAnswerId("D2") != null && ShownQuestionList.All(q => q.Id != 6))
         {
             ShownQuestionList.Add(FullQuestionList.Find(u => u.Id == 6));
         }
         
         //third branch
-        if (GetUserAnswerByAnswerId("A3") != null && ShownQuestionList.All(q => q.Id != 7))
+        if (GetUserAnswerByAnswerId("D3") != null && ShownQuestionList.All(q => q.Id != 7))
         {
             ShownQuestionList.Add(FullQuestionList.Find(u => u.Id == 7));
         }
-        if (GetUserAnswerByAnswerId("A3") != null && ShownQuestionList.All(q => q.Id != 8))
+        if (GetUserAnswerByAnswerId("D3") != null && ShownQuestionList.All(q => q.Id != 8))
         {
             ShownQuestionList.Add(FullQuestionList.Find(u => u.Id == 8));
         }
@@ -175,31 +190,34 @@
         {
             ShownQuestionList.Add(FullQuestionList.Find(u => u.Id == 10));
         }
-        if (GetUserAnswerByAnswerId("G1") != null && ShownQuestionList.All(q => q.Id != 13))
+        if (GetUserAnswerByAnswerId("G1") != null && ShownQuestionList.All(q => q.Id != 11))
+        {
+            ShownQuestionList.Add(FullQuestionList.Find(u => u.Id == 11));
+        }
+        if (GetUserAnswerByAnswerId("J2") != null && ShownQuestionList.All(q => q.Id != 12))
+        {
+            ShownQuestionList.Add(FullQuestionList.Find(u => u.Id == 12));
+        }
+        
+        
+        //Desktop APP branch
+        if (GetUserAnswerByAnswerId("G3") != null && ShownQuestionList.All(q => q.Id != 13))
         {
             ShownQuestionList.Add(FullQuestionList.Find(u => u.Id == 13));
         }
-        if (GetUserAnswerByAnswerId("J2") != null && ShownQuestionList.All(q => q.Id != 14))
-        {
-            var index = ShownQuestionList.IndexOf(ShownQuestionList.Find(u => u.Id == 10)) + 1;
-            ShownQuestionList.Insert(index,FullQuestionList.Find(u => u.Id == 14));
-        }
+        
         
         //Mobile App branch
-        if (GetUserAnswerByAnswerId("G2") != null && ShownQuestionList.All(q => q.Id != 12))
+        if (GetUserAnswerByAnswerId("G2") != null && ShownQuestionList.All(q => q.Id != 14))
         {
-            ShownQuestionList.Add(FullQuestionList.Find(u => u.Id == 12));
+            ShownQuestionList.Add(FullQuestionList.Find(u => u.Id == 14));
         }
         if (GetUserAnswerByAnswerId("G2") != null && ShownQuestionList.All(q => q.Id != 15))
         {
             ShownQuestionList.Add(FullQuestionList.Find(u => u.Id == 15));
         }
         
-        //Desktop APP branch
-        if (GetUserAnswerByAnswerId("G3") != null && ShownQuestionList.All(q => q.Id != 11))
-        {
-            ShownQuestionList.Add(FullQuestionList.Find(u => u.Id == 11));
-        }
+        
         
         //last (combined) branch Website & Mobile
         if (GetUserAnswerByAnswerId("G1") != null && GetUserAnswerByAnswerId("G2") != null && ShownQuestionList.All(q => q.Id != 16))
@@ -208,24 +226,27 @@
         }
         
 
-    //next element in ShownList
+        //next element in ShownList
         var nextIndex = ShownQuestionList.IndexOf(VisibleQuestion) + 1;
+        
+        
         //jump to end when all questions where asked
         if (nextIndex >= ShownQuestionList.Count)
         {
             ShownQuestionList.Add(FullQuestionList.Find(u => u.Id == 17));
             return 17;
         }
+        
         return ShownQuestionList[nextIndex].Id;
     }
     
 
 
-    private UserAnswer GetUserAnswerByAnswerId(string answerId)
+    private UserQuestionAnswer GetUserAnswerByAnswerId(string answerId)
     {
-        if (UserAnswerList.Any(ua => ua.Answers.Any(a => a.AnswerId == answerId)))
+        if (AppData.UserQuestionAnswers.Any(ua => ua.Answers.Any(a => a.AnswerId == answerId)))
         {
-            return UserAnswerList.First(ua => ua.Answers.Any(a => a.AnswerId == answerId));
+            return AppData.UserQuestionAnswers.First(ua => ua.Answers.Any(a => a.AnswerId == answerId));
         }
         return null;
 

@@ -1,8 +1,13 @@
-﻿<div class="sidebar @NavMenuCssClass"> 
-    <div class="container">
-        
+﻿
+
+<div class="sidebar @NavMenuCssClass">
+    
+    <div @onClick="ToggleNavMenu" id="MobileNavBtn"></div>
+    
+    <div class="container" style="padding: 0 0">
+
         <ul class="nav flex-column">
-            
+
             <li class="nav-item">
                 <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                     <span class="fas fa-cubes" aria-hidden="true"></span> Model
@@ -16,32 +21,40 @@
             </li>
 
             <li class="nav-item">
-                <NavLink class="nav-link" href="help">
-                    <span class="fas fa-question-circle" aria-hidden="true"></span> Help
+                <NavLink class="nav-link" href="survey">
+                    <span class="fas fa-poll-h" aria-hidden="true"></span> Survey
                 </NavLink>
             </li>
             
+            <li class="nav-item">
+                <NavLink class="nav-link" href="partners">
+                    <span class="fas fa-user-friends" aria-hidden="true"></span> Partners
+                </NavLink>
+            </li>
+
             <li class="nav-item">
                 <NavLink class="nav-link" href="contact">
                     <span class="fas fa-at" aria-hidden="true"></span> Contact
                 </NavLink>
             </li>
-            
-            
+
+
         </ul>
-        
+
     </div>
 </div>
+
+
 
 @* @onclick="ToggleNavMenu" *@
 
 @code {
-    private bool collapseNavMenu = false;
+    private bool _mobileNavMenu = false;
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private string NavMenuCssClass => _mobileNavMenu ? "mobileNav" : null;
 
     private void ToggleNavMenu()
     {
-        collapseNavMenu = !collapseNavMenu;
+        _mobileNavMenu = !_mobileNavMenu;
     }
 }

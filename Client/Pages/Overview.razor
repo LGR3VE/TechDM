@@ -1,11 +1,87 @@
 @page "/overview"
 @using TechDM.Client.Shared.Compontents
 @using TechDM.Shared
+@using TechDM.Client.Services
+@inject IJSRuntime JsRuntime
+
+<section id="overview">
+     <h2>Technology overview</h2>
+     
+     <div class="btn-group" role="group" aria-label="Basic example">
+          
+          <button type="button" class="btn @(ShowTechOverview ? "btn-info" : "btn-outline-info")" @onclick="ToggleOverview">Technologie Overview</button>
+          <button type="button" class="btn @(ShowDMOverview ? "btn-info" : "btn-outline-info")" @onclick="ToggleOverview">Decision Model Overview</button>
+          
+     </div>
+     
+     @if (ShowTechOverview)
+     {
+          <embed id="TechOverviewSVG" type="image/svg+xml" src="./img/TechOverview.svg">
+     }
+     else if(ShowDMOverview)
+     {
+          <embed id="DMOverviewSVG" type="image/svg+xml" src="./img/DMOverview.svg">
+     }
 
 
-<img id="overviewsvg"
-     src="./img/overview.svg"/>
+</section>
 
 
 @code {
+
+     private bool ShowTechOverview { get; set; } = true;
+     private bool ShowDMOverview { get; set; } = false;
+     
+     //Initiliate JS SVGZOOM libary
+     protected override async Task OnAfterRenderAsync(bool firstRender)
+     {
+          if (firstRender)
+          {
+               try
+               {
+                    if (ShowTechOverview)
+                    {
+                         await JsRuntime.InvokeVoidAsync("TechSvgZoom");
+                    }
+                    else
+                    {
+                         await JsRuntime.InvokeVoidAsync("DMSvgZoom");
+                    }
+                    
+               }
+               catch (Exception e)
+               {
+                    Console.WriteLine(e);
+               }
+               
+          }
+          else
+          {
+               try
+               {
+                    if (ShowTechOverview)
+                    {
+                         await JsRuntime.InvokeVoidAsync("TechSvgZoom");
+                    }
+                    else
+                    {
+                         await JsRuntime.InvokeVoidAsync("DMSvgZoom");
+                    }
+                    
+               }
+               catch (Exception e)
+               {
+                    Console.WriteLine(e);
+               }
+          }
+          
+          
+          
+     }
+
+     private void ToggleOverview()
+     {
+          ShowDMOverview = !ShowDMOverview;
+          ShowTechOverview = !ShowTechOverview;
+     }
 }

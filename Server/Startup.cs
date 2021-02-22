@@ -49,10 +49,12 @@ namespace TechDM.Server
                 app.UseHsts();
             }
 
+            app.UseMiddleware<LoggingMiddleware>();
             app.UseHttpsRedirection();
-            app.UseBlazorFrameworkFiles();
+            
             app.UseStaticFiles();
-
+            app.UseBlazorFrameworkFiles();
+            
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>

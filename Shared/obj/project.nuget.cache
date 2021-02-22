@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+WXYHlRJt/0vJyMD5wNUshbudfjZywUHXP6X1Fk7Znb1DsftRKiHuKqfxh1Mqw2VHlXPoi/Mf5oAJh+jyJP15w==",
+  "dgSpecHash": "cMQaQgAZ7vbqFq3dOnbTuJ3s2HrYoJgsH2gUT4blZXHNNYTTJYIl23aUhKbUEI+s6pZecaDZbDyNQaypzGO7uw==",
   "success": true,
   "projectFilePath": "E:\\dev\\TechDM\\Shared\\TechDM.Shared.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\lgrev\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

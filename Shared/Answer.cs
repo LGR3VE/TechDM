@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace TechDM.Shared
 {
@@ -9,9 +10,7 @@ namespace TechDM.Shared
         public string AnswerText { get; set; }
         public string AnswerDescription { get; set; }
         public bool Selected { get; set; }
-
         public string TempValue { get; set; }
-        public int TempNumber { get; set; }
 
 
         public Answer()
@@ -40,4 +39,5 @@ namespace TechDM.Shared
             public double max { get; set; }
         }
     }
+    
 }

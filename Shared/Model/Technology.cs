@@ -10,6 +10,7 @@ namespace TechDM.Shared.Model
         public string Name { get; set; }
         public string SubHeader { get; set; }
         public Category Category { get; set; }
+        public SubCategory SubCategory { get; set; }
         public List<Attribute> Attributes { get; set; }
         public String Description { get; set; }
         public String Language { get; set; }

@@ -10,6 +10,7 @@ namespace TechDM.Shared.Enums
         hidden,
         password,
         number,
+        order,
         enumeration,
         start,
         end

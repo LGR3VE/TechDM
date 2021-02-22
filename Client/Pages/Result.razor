@@ -1,51 +1,338 @@
 @page "/result"
 @using TechDM.Shared.Model
+@using TechDM.Shared.Enums
+@using Microsoft.Extensions.Logging
+@inject Services.AppData AppData
+@inject ILogger<Result> logger;
+
+<section>
 <h3>And here is your result</h3>
-
-
-<div class="row">
+<p>@AppData.UserQuestionAnswers.Count questions answered.<br>
+    @IndividualCharacteristics individual characteristics considered.</p>
     
-    
-    @foreach (var tech in Technologies)
-    {
-        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-            <div class="card-result">
-                <div class="card-result__image-container">
-                    <img class="card-result__image" src="@tech.LogoUrl" alt="@tech.Name Logo">
-                </div>
+<div class="row" id="">
+<div class="col-12">
+            
+<RadzenAccordion Expand=@(args => Change(args, "Accordion with single expand", "expanded"))>
+<Items>
+    <RadzenAccordionItem Selected="true" Text="Business Management">
+        <div class="row">
+            @foreach (var tech in Technologies
+                .Where(technology => technology.Category == Category.BusinessManagement)
+                .OrderByDescending(technology => ScoreList.First(ts=> ts.TechnologyId.Equals(technology.Id)).Score))
+            {
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <div class="card-result">
+                        <div class="card-result__image-container">
+                            <img class="card-result__image" src="@tech.LogoUrl" alt="@tech.Name Logo">
+                        </div>
 
-                <svg class="card-result__svg" viewBox="0 0 800 500">
-                    <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
-                    <path class="card-result__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
-                </svg>
+                        <svg class="card-result__svg" viewBox="0 0 800 500">
+                            <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+                            <path class="card-result__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+                        </svg>
 
-                <div class="card-result__content">
-                    <div class="result-score">
-                        <div class="result-score_text">
-                            @if (ScoreList.Any(s => s.TechnologyId == tech.Id))
-                            {
-                                @ScoreList.Find(s => s.TechnologyId == tech.Id).Score
-                            }
-                            else
-                            {
-                                @((MarkupString) "100")
-                            }
+                        <div class="card-result__content">
+                            <div class="result-score">
+                                <div class="result-score_text">
+                                    @if (ScoreList.Any(s => s.TechnologyId == tech.Id))
+                                    {
+                                        @((MarkupString) "Score: " + ScoreList.First(s => s.TechnologyId == tech.Id).Score.ToString())
+                                    }
+                                    else
+                                    {
+                                        @((MarkupString) "ERROR")
+                                    }
+                                </div>
+                            </div>
+                            <h3 class="card-result__title">@tech.Name</h3>
+                            <p class="card-result__subheader">@tech.SubHeader</p>
+
+                            <details class="card-result__description">
+                                <summary>more</summary>
+                                <p>@((MarkupString) tech.Description)</p>
+                            </details>
+
                         </div>
                     </div>
-                    <h3 class="card-result__title">@tech.Name</h3>
-                    <p class="card-result__subheader">@tech.SubHeader</p>
-                    
-                    <details class="card-result__description">
-                        <summary>more</summary>
-                        <p>@((MarkupString) tech.Description)</p>
-                    </details>
-
                 </div>
-            </div>
+                                        
+            }
         </div>
-    }
+    </RadzenAccordionItem>
+    <RadzenAccordionItem Text="Communication & Collaboration">
+        <div class="row">
+            @foreach (var tech in Technologies
+                .Where(technology => technology.Category == Category.CommunicationCollaboration)
+                .OrderByDescending(technology => ScoreList.First(ts=> ts.TechnologyId.Equals(technology.Id)).Score))
+            {
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <div class="card-result">
+                        <div class="card-result__image-container">
+                            <img class="card-result__image" src="@tech.LogoUrl" alt="@tech.Name Logo">
+                        </div>
     
+                        <svg class="card-result__svg" viewBox="0 0 800 500">
+                            <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+                            <path class="card-result__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+                        </svg>
+    
+                        <div class="card-result__content">
+                            <div class="result-score">
+                                <div class="result-score_text">
+                                    @if (ScoreList.Any(s => s.TechnologyId == tech.Id))
+                                    {
+                                        @((MarkupString) "Score: " + ScoreList.First(s => s.TechnologyId == tech.Id).Score.ToString())
+                                    }
+                                    else
+                                    {
+                                        @((MarkupString) "ERROR")
+                                    }
+                                </div>
+                            </div>
+                            <h3 class="card-result__title">@tech.Name</h3>
+                            <p class="card-result__subheader">@tech.SubHeader</p>
+    
+                            <details class="card-result__description">
+                                <summary>more</summary>
+                                <p>@((MarkupString) tech.Description)</p>
+                            </details>
+    
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </RadzenAccordionItem>
+    <RadzenAccordionItem Text="Website">
+        <div class="row">
+            @foreach (var tech in Technologies
+                .Where(technology => technology.Category == Category.Website)
+                .OrderByDescending(technology => ScoreList.First(ts=> ts.TechnologyId.Equals(technology.Id)).Score))
+            {
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <div class="card-result">
+                        <div class="card-result__image-container">
+                            <img class="card-result__image" src="@tech.LogoUrl" alt="@tech.Name Logo">
+                        </div>
+    
+                        <svg class="card-result__svg" viewBox="0 0 800 500">
+                            <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+                            <path class="card-result__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+                        </svg>
+    
+                        <div class="card-result__content">
+                            <div class="result-score">
+                                <div class="result-score_text">
+                                    @if (ScoreList.Any(s => s.TechnologyId == tech.Id))
+                                    {
+                                        @((MarkupString) "Score: " + ScoreList.First(s => s.TechnologyId == tech.Id).Score.ToString())
+                                    }
+                                    else
+                                    {
+                                        @((MarkupString) "ERROR")
+                                    }
+                                </div>
+                            </div>
+                            <h3 class="card-result__title">@tech.Name</h3>
+                            <p class="card-result__subheader">@tech.SubHeader</p>
+    
+                            <details class="card-result__description">
+                                <summary>more</summary>
+                                <p>@((MarkupString) tech.Description)</p>
+                            </details>
+    
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </RadzenAccordionItem>
+    <RadzenAccordionItem Text="Database">
+        <div class="row">
+            @foreach (var tech in Technologies
+                .Where(technology => technology.Category == Category.Database)
+                .OrderByDescending(technology => ScoreList.First(ts=> ts.TechnologyId.Equals(technology.Id)).Score))
+            {
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <div class="card-result">
+                        <div class="card-result__image-container">
+                            <img class="card-result__image" src="@tech.LogoUrl" alt="@tech.Name Logo">
+                        </div>
+    
+                        <svg class="card-result__svg" viewBox="0 0 800 500">
+                            <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+                            <path class="card-result__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+                        </svg>
+    
+                        <div class="card-result__content">
+                            <div class="result-score">
+                                <div class="result-score_text">
+                                    @if (ScoreList.Any(s => s.TechnologyId == tech.Id))
+                                    {
+                                        @((MarkupString) "Score: " + ScoreList.First(s => s.TechnologyId == tech.Id).Score.ToString())
+                                    }
+                                    else
+                                    {
+                                        @((MarkupString) "ERROR")
+                                    }
+                                </div>
+                            </div>
+                            <h3 class="card-result__title">@tech.Name</h3>
+                            <p class="card-result__subheader">@tech.SubHeader</p>
+    
+                            <details class="card-result__description">
+                                <summary>more</summary>
+                                <p>@((MarkupString) tech.Description)</p>
+                            </details>
+    
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </RadzenAccordionItem>
+    <RadzenAccordionItem Text="Desktop App">
+        <div class="row">
+            @foreach (var tech in Technologies
+                .Where(technology => technology.Category == Category.DesktopApp)
+                .OrderByDescending(technology => ScoreList.First(ts=> ts.TechnologyId.Equals(technology.Id)).Score))
+            {
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <div class="card-result">
+                        <div class="card-result__image-container">
+                            <img class="card-result__image" src="@tech.LogoUrl" alt="@tech.Name Logo">
+                        </div>
+    
+                        <svg class="card-result__svg" viewBox="0 0 800 500">
+                            <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+                            <path class="card-result__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+                        </svg>
+    
+                        <div class="card-result__content">
+                            <div class="result-score">
+                                <div class="result-score_text">
+                                    @if (ScoreList.Any(s => s.TechnologyId == tech.Id))
+                                    {
+                                        @((MarkupString) "Score: " + ScoreList.First(s => s.TechnologyId == tech.Id).Score.ToString())
+                                    }
+                                    else
+                                    {
+                                        @((MarkupString) "ERROR")
+                                    }
+                                </div>
+                            </div>
+                            <h3 class="card-result__title">@tech.Name</h3>
+                            <p class="card-result__subheader">@tech.SubHeader</p>
+    
+                            <details class="card-result__description">
+                                <summary>more</summary>
+                                <p>@((MarkupString) tech.Description)</p>
+                            </details>
+    
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </RadzenAccordionItem>
+    <RadzenAccordionItem Text="Mobile App">
+        <div class="row">
+            @foreach (var tech in Technologies
+                .Where(technology => technology.Category == Category.MobileApp)
+                .OrderByDescending(technology => ScoreList.First(ts=> ts.TechnologyId.Equals(technology.Id)).Score))
+            {
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <div class="card-result">
+                        <div class="card-result__image-container">
+                            <img class="card-result__image" src="@tech.LogoUrl" alt="@tech.Name Logo">
+                        </div>
+    
+                        <svg class="card-result__svg" viewBox="0 0 800 500">
+                            <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+                            <path class="card-result__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+                        </svg>
+    
+                        <div class="card-result__content">
+                            <div class="result-score">
+                                <div class="result-score_text">
+                                    @if (ScoreList.Any(s => s.TechnologyId == tech.Id))
+                                    {
+                                        @((MarkupString) "Score: " + ScoreList.First(s => s.TechnologyId == tech.Id).Score.ToString())
+                                    }
+                                    else
+                                    {
+                                        @((MarkupString) "ERROR")
+                                    }
+                                </div>
+                            </div>
+                            <h3 class="card-result__title">@tech.Name</h3>
+                            <p class="card-result__subheader">@tech.SubHeader</p>
+    
+                            <details class="card-result__description">
+                                <summary>more</summary>
+                                <p>@((MarkupString) tech.Description)</p>
+                            </details>
+    
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </RadzenAccordionItem>
+    <RadzenAccordionItem Text="Hosting">
+        <div class="row">
+            @foreach (var tech in Technologies
+                .Where(technology => technology.Category == Category.Hosting)
+                .OrderByDescending(technology => ScoreList.First(ts=> ts.TechnologyId.Equals(technology.Id)).Score))
+            {
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <div class="card-result">
+                        <div class="card-result__image-container">
+                            <img class="card-result__image" src="@tech.LogoUrl" alt="@tech.Name Logo">
+                        </div>
+    
+                        <svg class="card-result__svg" viewBox="0 0 800 500">
+                            <path d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500" stroke="transparent" fill="#333"/>
+                            <path class="card-result__line" d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400" stroke="pink" stroke-width="3" fill="transparent"/>
+                        </svg>
+    
+                        <div class="card-result__content">
+                            <div class="result-score">
+                                <div class="result-score_text">
+                                    @if (ScoreList.Any(s => s.TechnologyId == tech.Id))
+                                    {
+                                        @((MarkupString) "Score: " + ScoreList.First(s => s.TechnologyId == tech.Id).Score.ToString())
+                                    }
+                                    else
+                                    {
+                                        @((MarkupString) "ERROR")
+                                    }
+                                </div>
+                            </div>
+                            <h3 class="card-result__title">@tech.Name</h3>
+                            <p class="card-result__subheader">@tech.SubHeader</p>
+    
+                            <details class="card-result__description">
+                                <summary>more</summary>
+                                <p>@((MarkupString) tech.Description)</p>
+                            </details>
+    
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </RadzenAccordionItem>
+                
+                
+</Items>
+</RadzenAccordion>
+
 </div>
+</div>
+</section>
+
 
 
 
@@ -53,15 +340,32 @@
 @code {
     
     
-    private List<Technology> Technologies { get; set; }
-    private List<TechnologyScore> ScoreList { get; set; }
+    private IEnumerable<Technology> Technologies { get; set; }
+    private int IndividualCharacteristics { get; set; }
+    
+    
+    [Parameter]
+    public IEnumerable<TechnologyScore> ScoreList { get; set; }
 
 
     protected override void OnParametersSet()
     {
-        //TODO Connect calculate Score
-        ScoreList = new List<TechnologyScore>();
+        ScoreList = DecisionModel.CalculateScores(AppData.UserQuestionAnswers, SeedData.TechnologyData);
         Technologies = SeedData.TechnologyData.ToList();
+
+        foreach (var questionAnswer in AppData.UserQuestionAnswers)
+        {
+            foreach (var answer in questionAnswer.Answers)
+            {
+                IndividualCharacteristics++;
+            }
+        }
+        
+    }
+    
+    void Change(object value, string name, string action)
+    {
+        
     }
 
 }
