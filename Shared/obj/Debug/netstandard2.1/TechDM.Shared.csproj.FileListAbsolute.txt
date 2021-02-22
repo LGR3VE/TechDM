@@ -1,9 +1,0 @@
-E:\dev\TechDM\Shared\bin\Debug\netstandard2.1\TechDM.Shared.deps.json
-E:\dev\TechDM\Shared\bin\Debug\netstandard2.1\TechDM.Shared.dll
-E:\dev\TechDM\Shared\bin\Debug\netstandard2.1\TechDM.Shared.pdb
-E:\dev\TechDM\Shared\obj\Debug\netstandard2.1\TechDM.Shared.AssemblyInfoInputs.cache
-E:\dev\TechDM\Shared\obj\Debug\netstandard2.1\TechDM.Shared.AssemblyInfo.cs
-E:\dev\TechDM\Shared\obj\Debug\netstandard2.1\TechDM.Shared.csproj.CoreCompileInputs.cache
-E:\dev\TechDM\Shared\obj\Debug\netstandard2.1\TechDM.Shared.dll
-E:\dev\TechDM\Shared\obj\Debug\netstandard2.1\TechDM.Shared.pdb
-E:\dev\TechDM\Shared\obj\Debug\netstandard2.1\TechDM.Shared.csprojAssemblyReference.cache
