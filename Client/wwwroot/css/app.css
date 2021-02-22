@@ -1036,7 +1036,12 @@ embed#DMOverviewSVG {
 }
 
 .author h4 {
-  font-size: 22px;
+  font-size: 2rem;
+}
+
+.author h4 a {
+  color: black;
+  text-underline: none;
 }
 
 /*--------------------------------------------------------------
