@@ -20,317 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c95977a-24f0-4596-a92a-45ef34586cb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Client/Pages/Contact.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/Pages/Survey.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/Pages/Test.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/Services/AppData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/browserconfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/data/Bachelorarbeit_Lennard_Greve.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/img/DMOverview.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/img/HARCIS-Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/img/technologies/pwa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/img/welcome.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/js/svg-pan-zoom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/mstile-144x144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/mstile-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/mstile-310x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/mstile-310x310.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/mstile-70x70.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/safari-pinned-tab.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/wwwroot/service-worker.published_backup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/LoggingMiddleware.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shared/Enums/SubCategory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TechDM/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TechDM/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TechDM/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TechDM/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TechDM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TechDM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/TechDM/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/TechDM/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/TechDM/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/TechDM/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Pages/Counter.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Pages/FetchData.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Pages/Help.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Pages/Index.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Pages/Model.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Pages/Model.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Pages/Overview.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Pages/Overview.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Pages/Partners.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Pages/Partners.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Pages/Result.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Pages/Result.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Shared/AppFooter.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Shared/AppFooter.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Shared/AppHeader.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Shared/AppHeader.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Shared/Compontents/BackButton.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Shared/Compontents/BackButton.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Shared/Compontents/DefaultCard.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Shared/Compontents/DefaultCard.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Shared/LoadingPage.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Shared/LoadingPage.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Shared/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Shared/NavMenu.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/TechDM.Client.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Client/TechDM.Client.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Client/_Imports.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.AspNetCore.Authorization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.AspNetCore.Authorization.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.AspNetCore.Components.Forms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.AspNetCore.Components.Forms.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.AspNetCore.Components.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.AspNetCore.Components.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.AspNetCore.Components.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.AspNetCore.Components.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.AspNetCore.Metadata.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.AspNetCore.Metadata.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.Extensions.Options.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.Extensions.Options.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.Extensions.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.Extensions.Primitives.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.JSInterop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Microsoft.JSInterop.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Radzen.Blazor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/Radzen.Blazor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/System.ComponentModel.Annotations.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/System.ComponentModel.Annotations.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/TechDM.Client.StaticWebAssets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/TechDM.Client.StaticWebAssets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/TechDM.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/TechDM.Client.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/TechDM.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/TechDM.Client.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/TechDM.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/TechDM.Shared.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/TechDM.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/TechDM.Shared.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.AspNetCore.Components.Forms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.AspNetCore.Components.Forms.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.AspNetCore.Components.Forms.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.AspNetCore.Components.Forms.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.AspNetCore.Components.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.AspNetCore.Components.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.AspNetCore.Components.Web.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.AspNetCore.Components.Web.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.AspNetCore.Components.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.AspNetCore.Components.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.AspNetCore.Components.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.AspNetCore.Components.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.CSharp.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.CSharp.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.DependencyInjection.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.DependencyInjection.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.Logging.Abstractions.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.Logging.Abstractions.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.Options.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.Options.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.Options.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.Options.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.Primitives.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.Primitives.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.Extensions.Primitives.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.JSInterop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.JSInterop.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.JSInterop.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Microsoft.JSInterop.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Radzen.Blazor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Radzen.Blazor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Radzen.Blazor.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/Radzen.Blazor.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/System.Linq.Dynamic.Core.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/System.Linq.Dynamic.Core.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/System.Linq.Dynamic.Core.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/System.Linq.Dynamic.Core.pdb.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/System.Net.Http.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/System.Net.Http.Json.dll.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/System.Reflection.Emit.ILGeneration.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/System.Reflection.Emit.ILGeneration.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/System.Reflection.Emit.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/System.Reflection.Emit.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Client.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Client.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Client.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Client.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Client.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Client.pdb.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Shared.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Shared.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Shared.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Shared.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Shared.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/_bin/TechDM.Shared.pdb.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/blazor.boot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/blazor.boot.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/_framework/blazor.boot.json.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker-assets.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker-assets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker-assets.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker-assets.js.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/bin/Debug/netstandard2.1/wwwroot/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/App.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/App.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Pages/Counter.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Pages/FetchData.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Pages/Index.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Pages/Overview.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Pages/Overview.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Shared/AppFooter.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Shared/AppFooter.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Shared/AppHeader.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Shared/AppHeader.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Shared/LoadingPage.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Shared/LoadingPage.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Shared/MainLayout.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Shared/MainLayout.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Shared/NavMenu.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/Shared/NavMenu.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/_Imports.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/Razor/_Imports.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/App.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/App.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Pages/Counter.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Pages/FetchData.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Pages/Index.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Pages/Overview.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Pages/Overview.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Shared/AppFooter.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Shared/AppFooter.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Shared/AppHeader.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Shared/AppHeader.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Shared/LoadingPage.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Shared/LoadingPage.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Shared/MainLayout.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Shared/MainLayout.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Shared/NavMenu.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/Shared/NavMenu.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/TechDM.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/TechDM.Client.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/TechDM.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/TechDM.Client.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/_Imports.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/RazorDeclaration/_Imports.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.RazorComponent.input.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.RazorComponent.input.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.RazorCoreGenerate.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.TagHelpers.output.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.TagHelpers.output.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/TechDM.Client.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/blazor.boot.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/blazor.boot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/boot.json.input" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/boot.json.input" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/service-worker-assets.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/service-worker-assets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/serviceworkerhashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/serviceworkerhashes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/serviceworkers/wwwroot/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/serviceworkers/wwwroot/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked.output" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked.output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.AspNetCore.Components.Forms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.AspNetCore.Components.Forms.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.AspNetCore.Components.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.AspNetCore.Components.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.AspNetCore.Components.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.AspNetCore.Components.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.Extensions.Options.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.Extensions.Options.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.Extensions.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.Extensions.Primitives.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.JSInterop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Microsoft.JSInterop.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Radzen.Blazor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/Radzen.Blazor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/TechDM.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/TechDM.Client.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/TechDM.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/TechDM.Client.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/TechDM.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/TechDM.Shared.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/TechDM.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/blazor/unlinked/TechDM.Shared.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.AspNetCore.Components.Forms.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.AspNetCore.Components.Forms.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.AspNetCore.Components.Web.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.AspNetCore.Components.Web.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.AspNetCore.Components.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.AspNetCore.Components.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.CSharp.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.CSharp.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.Extensions.DependencyInjection.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.Extensions.DependencyInjection.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.Extensions.Logging.Abstractions.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.Extensions.Logging.Abstractions.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.Extensions.Options.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.Extensions.Options.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.Extensions.Primitives.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.Extensions.Primitives.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.JSInterop.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Microsoft.JSInterop.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Radzen.Blazor.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/Radzen.Blazor.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/System.Linq.Dynamic.Core.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/System.Linq.Dynamic.Core.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/System.Linq.Dynamic.Core.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/System.Linq.Dynamic.Core.pdb.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/System.Net.Http.Json.dll.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/System.Reflection.Emit.ILGeneration.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/System.Reflection.Emit.ILGeneration.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/System.Reflection.Emit.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/System.Reflection.Emit.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/TechDM.Client.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/TechDM.Client.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/TechDM.Client.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/TechDM.Client.pdb.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/TechDM.Shared.dll.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/TechDM.Shared.dll.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/TechDM.Shared.pdb.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/_bin/TechDM.Shared.pdb.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/blazor.boot.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/_framework/blazor.boot.json.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/brotli.manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/brotli.manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/gzip.manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/gzip.manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/service-worker-assets.js.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/compressed/service-worker-assets.js.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/6gJMwefpsWLHWsEipZp143xn8k2Ea27upnXqjUT6iNI=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/99dseBOagY3mzu5Y8Eqm8gRI_o8QbbCp7R2Ew9bQ_5E=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/Aqp7QUn-7uobYK0laVkKucAoPAQ4I94Jnnsl-jahrGI=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/Bs1Wrmh4ex9dTEIT0yCRF52N-wOmsBDt457BHr0-ssM=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/PEg9ghiKSWBTX0jq8pFDvv2Yvw92Y8W0ELtWrSE4fhA=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/bSgsT2x5xMvs8mara5wU_EJwcyHa9GVMU85HwhWcdWM=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/m7Q_cF5-ji3OMfdGlCuE8pQ-iM_kxNHLq-IEWVvIaOg=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/oK1Bjv95fH_hSbogUkJE_xDAI203kJG6lL6Sm-NuPWg=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/rvTW0d54uLW0iDMAX30lpmr9f8uHoS3YYkEU5zNGhyc=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/integrity/y-FyJQOcW2TOcTp7Iuv8brGBzL5ZP0oJdG7ysK_gtKc=.hash" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/staticwebassets/TechDM.Client.StaticWebAssets.Manifest.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/staticwebassets/TechDM.Client.StaticWebAssets.Manifest.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/staticwebassets/TechDM.Client.StaticWebAssets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/Debug/netstandard2.1/staticwebassets/TechDM.Client.StaticWebAssets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/TechDM.Client.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/TechDM.Client.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/TechDM.Client.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/TechDM.Client.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/TechDM.Client.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/TechDM.Client.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Client/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/wwwroot/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/wwwroot/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/css/app.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/wwwroot/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/wwwroot/debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/wwwroot/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/wwwroot/icon-512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/wwwroot/img/overview.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/img/TechOverview.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/wwwroot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/wwwroot/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/wwwroot/service-worker.published.js" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/service-worker.published.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/QuestionList.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/TechDM.Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Server/TechDM.Server.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authorization.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authorization.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Components.Forms.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Components.Forms.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Components.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Components.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Components.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Components.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Metadata.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Metadata.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.JSInterop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Microsoft.JSInterop.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/QuestionList.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Radzen.Blazor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/Radzen.Blazor.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Client.StaticWebAssets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Client.StaticWebAssets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Client.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Client.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.StaticWebAssets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.StaticWebAssets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Server.runtimeconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Shared.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/TechDM.Shared.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.RazorTargetAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.RazorTargetAssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.TagHelpers.output.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.TagHelpers.output.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/TechDM.Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/staticwebassets/TechDM.Server.StaticWebAssets.Manifest.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/staticwebassets/TechDM.Server.StaticWebAssets.Manifest.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/staticwebassets/TechDM.Server.StaticWebAssets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/Debug/netcoreapp3.1/staticwebassets/TechDM.Server.StaticWebAssets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/TechDM.Server.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/TechDM.Server.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/TechDM.Server.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/TechDM.Server.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/TechDM.Server.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/TechDM.Server.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Server/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/Answer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Answer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/Enums/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Enums/Category.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/Enums/QuestionType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Enums/QuestionType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/Model/Condition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Model/Condition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/Model/DecisionModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Model/DecisionModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/Model/SeedData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Model/SeedData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/Model/Technology.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Model/Technology.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/Question.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/Question.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/TechDM.Shared.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/TechDM.Shared.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/UserAnswer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/UserQuestionAnswer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/bin/Debug/netstandard2.1/TechDM.Shared.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/bin/Debug/netstandard2.1/TechDM.Shared.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/bin/Debug/netstandard2.1/TechDM.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/bin/Debug/netstandard2.1/TechDM.Shared.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/bin/Debug/netstandard2.1/TechDM.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/bin/Debug/netstandard2.1/TechDM.Shared.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/TechDM.Shared.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/TechDM.Shared.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/TechDM.Shared.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/TechDM.Shared.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/TechDM.Shared.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/TechDM.Shared.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/TechDM.Shared.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/TechDM.Shared.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/TechDM.Shared.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/TechDM.Shared.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/TechDM.Shared.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/Debug/netstandard2.1/TechDM.Shared.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/obj/TechDM.Shared.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/TechDM.Shared.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/obj/TechDM.Shared.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/TechDM.Shared.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shared/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Shared/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechDM.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TechDM.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -569,7 +259,7 @@
       <workItem from="1613827928223" duration="3139000" />
       <workItem from="1613836996063" duration="4952000" />
       <workItem from="1613905050129" duration="32466000" />
-      <workItem from="1613956589701" duration="313000" />
+      <workItem from="1613956589701" duration="1673000" />
     </task>
     <task id="LOCAL-00001" summary="Finished questions and basic styling">
       <created>1605289864535</created>
@@ -592,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605290549626</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Beta Version 1.6&#10;&#10;+ GUI Fixes&#10;+ Graphic improvements&#10;+ Scoring System&#10;+ Overview and Thanks Section&#10;+ Result ordered by categories&#10;+ new conditions&#10;+ Drag and drop for Q3 (Priorities)">
+      <created>1613957152566</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613957152567</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -621,7 +318,8 @@
     <MESSAGE value="Finished questions and basic styling" />
     <MESSAGE value="Organize Repo" />
     <MESSAGE value="Add Tech resources to www/root" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Tech resources to www/root" />
+    <MESSAGE value="Beta Version 1.6&#10;&#10;+ GUI Fixes&#10;+ Graphic improvements&#10;+ Scoring System&#10;+ Overview and Thanks Section&#10;+ Result ordered by categories&#10;+ new conditions&#10;+ Drag and drop for Q3 (Priorities)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Beta Version 1.6&#10;&#10;+ GUI Fixes&#10;+ Graphic improvements&#10;+ Scoring System&#10;+ Overview and Thanks Section&#10;+ Result ordered by categories&#10;+ new conditions&#10;+ Drag and drop for Q3 (Priorities)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
