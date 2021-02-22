@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\lgrev\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\lgrev\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_TechDM.-1356284504.00" t="ExcludeRecursive" />
+    <e p="C:\Users\lgrev\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\lgrev\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\lgrev\AppData\Roaming\JetBrains\Rider2020.3\scratches" t="IncludeRecursive" />
+    <e p="E:\dev\TechDM" t="IncludeFlat">
+      <e p="Client" t="IncludeRecursive">
+        <e p="_Imports.razor" t="Include" />
+        <e p="App.razor" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="TechDM.Client.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Pages" t="Include">
+          <e p="Contact.razor" t="Include" />
+          <e p="Model.razor" t="Include" />
+          <e p="Overview.razor" t="Include" />
+          <e p="Partners.razor" t="Include" />
+          <e p="Result.razor" t="Include" />
+          <e p="Survey.razor" t="Include" />
+          <e p="Test.razor" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="AppData.cs" t="Include" />
+        </e>
+        <e p="Shared" t="Include">
+          <e p="AppFooter.razor" t="Include" />
+          <e p="AppHeader.razor" t="Include" />
+          <e p="Compontents" t="Include">
+            <e p="BackButton.razor" t="Include" />
+            <e p="DefaultCard.razor" t="Include" />
+            <e p="ProgressBar.razor" t="Include" />
+            <e p="SuccessCheckmark.razor" t="Include" />
+            <e p="SurveyPrompt.razor" t="Include" />
+          </e>
+          <e p="LoadingPage.razor" t="Include" />
+          <e p="MainLayout.razor" t="Include" />
+          <e p="NavMenu.razor" t="Include" />
+        </e>
+        <e p="TechDM.Client.csproj" t="IncludeRecursive" />
+        <e p="wwwroot" t="Include">
+          <e p="android-chrome-192x192.png" t="Include" />
+          <e p="android-chrome-512x512.png" t="Include" />
+          <e p="apple-touch-icon.png" t="Include" />
+          <e p="browserconfig.xml" t="Include" />
+          <e p="css" t="Include">
+            <e p="app.css" t="Include" />
+            <e p="app.css.map" t="Include" />
+            <e p="app.scss" t="Include" />
+            <e p="bootstrap" t="Include">
+              <e p="bootstrap.min.css" t="Include" />
+              <e p="bootstrap.min.css.map" t="Include" />
+            </e>
+            <e p="open-iconic" t="Include">
+              <e p="font" t="Include">
+                <e p="css" t="Include">
+                  <e p="open-iconic-bootstrap.min.css" t="Include" />
+                </e>
+                <e p="fonts" t="Include">
+                  <e p="open-iconic.eot" t="Include" />
+                  <e p="open-iconic.otf" t="Include" />
+                  <e p="open-iconic.svg" t="Include" />
+                  <e p="open-iconic.ttf" t="Include" />
+                  <e p="open-iconic.woff" t="Include" />
+                </e>
+              </e>
+              <e p="FONT-LICENSE" t="Include" />
+              <e p="ICON-LICENSE" t="Include" />
+              <e p="README.md" t="Include" />
+            </e>
+          </e>
+          <e p="data" t="Include">
+            <e p="Bachelorarbeit_Lennard_Greve.pdf" t="Include" />
+          </e>
+          <e p="favicon-16x16.png" t="Include" />
+          <e p="favicon-32x32.png" t="Include" />
+          <e p="favicon.ico" t="Include" />
+          <e p="img" t="Include">
+            <e p="DMOverview.svg" t="Include" />
+            <e p="HARCIS-Logo.png" t="Include" />
+            <e p="technologies" t="Include">
+              <e p="android.png" t="Include" />
+              <e p="angular.png" t="Include" />
+              <e p="apple.png" t="Include" />
+              <e p="asana.png" t="Include" />
+              <e p="Blazor.png" t="Include" />
+              <e p="django.png" t="Include" />
+              <e p="dotnetcore.png" t="Include" />
+              <e p="DynamoDB.png" t="Include" />
+              <e p="flask.png" t="Include" />
+              <e p="flutter.png" t="Include" />
+              <e p="googleWorkspace.png" t="Include" />
+              <e p="hubspot.jpg" t="Include" />
+              <e p="hubspot.png" t="Include" />
+              <e p="ionic.png" t="Include" />
+              <e p="java_spring.png" t="Include" />
+              <e p="Jira.png" t="Include" />
+              <e p="Laravel.png" t="Include" />
+              <e p="mongodb.png" t="Include" />
+              <e p="node_js.png" t="Include" />
+              <e p="office365.png" t="Include" />
+              <e p="postgresql.png" t="Include" />
+              <e p="pwa.png" t="Include" />
+              <e p="react.png" t="Include" />
+              <e p="ruby.png" t="Include" />
+              <e p="Salesforce.png" t="Include" />
+              <e p="SAP.png" t="Include" />
+              <e p="shopify.png" t="Include" />
+              <e p="slack.png" t="Include" />
+              <e p="Trello.png" t="Include" />
+              <e p="vuejs.png" t="Include" />
+              <e p="webflow.png" t="Include" />
+              <e p="Wix.png" t="Include" />
+              <e p="wordpress.png" t="Include" />
+              <e p="Xamarin.png" t="Include" />
+              <e p="zoho-crm.png" t="Include" />
+              <e p="Zoom.png" t="Include" />
+            </e>
+            <e p="TechOverview.svg" t="Include" />
+            <e p="UHH_Logo.png" t="Include" />
+            <e p="welcome.jpg" t="Include" />
+          </e>
+          <e p="index.html" t="Include" />
+          <e p="js" t="Include">
+            <e p="main.js" t="Include" />
+            <e p="panzoom.js" t="Include" />
+            <e p="svg-pan-zoom.min.js" t="Include" />
+          </e>
+          <e p="manifest.json" t="Include" />
+          <e p="mstile-144x144.png" t="Include" />
+          <e p="mstile-150x150.png" t="Include" />
+          <e p="mstile-310x150.png" t="Include" />
+          <e p="mstile-310x310.png" t="Include" />
+          <e p="mstile-70x70.png" t="Include" />
+          <e p="safari-pinned-tab.svg" t="Include" />
+          <e p="service-worker.js" t="Include" />
+          <e p="service-worker.published.js" t="Include" />
+          <e p="service-worker.published_backup.js" t="Include" />
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Server" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="QuestionController.cs" t="Include" />
+          <e p="WeatherForecastController.cs" t="Include" />
+        </e>
+        <e p="Database" t="Include">
+          <e p="ApplicationDbContext.cs" t="Include" />
+        </e>
+        <e p="debug.log" t="Include" />
+        <e p="LoggingMiddleware.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="TechDM.Server.AssemblyInfo.cs" t="Include" />
+              <e p="TechDM.Server.RazorAssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Pages" t="Include">
+          <e p="Error.cshtml" t="Include" />
+          <e p="Error.cshtml.cs" t="Include" />
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="FolderProfile.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="TechDM.Server.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Shared" t="IncludeRecursive">
+        <e p="Answer.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Enums" t="Include">
+          <e p="Category.cs" t="Include" />
+          <e p="Languages.cs" t="Include" />
+          <e p="QuestionType.cs" t="Include" />
+          <e p="SubCategory.cs" t="Include" />
+        </e>
+        <e p="Model" t="Include">
+          <e p="Condition.cs" t="Include" />
+          <e p="DecisionModel.cs" t="Include" />
+          <e p="SeedData.cs" t="Include" />
+          <e p="Technology.cs" t="Include" />
+          <e p="TechnologyScore.cs" t="Include" />
+        </e>
+        <e p="ModelAnswer.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="TechDM.Shared.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Partner.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="PublishProfiles" t="Include">
+            <e p="FolderProfile.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Question.cs" t="Include" />
+        <e p="TechDM.Shared.csproj" t="IncludeRecursive" />
+        <e p="UserQuestionAnswer.cs" t="Include" />
+        <e p="WeatherForecast.cs" t="Include" />
+      </e>
+      <e p="TechDM.sln" t="IncludeFlat" />
+      <e p="TestModel" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net5.0" t="Include">
+              <e p="TestModel.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="TestModel.csproj" t="IncludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
